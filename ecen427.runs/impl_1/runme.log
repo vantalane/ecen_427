@@ -1,0 +1,1123 @@
+
+*** Running vivado
+    with args -log system_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source system_wrapper.tcl -notrace
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source system_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.ipdefs/digilent_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1143.918 ; gain = 0.000
+Command: link_design -top system_wrapper -part xc7z020clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_uartlite_0_0/system_axi_uartlite_0_0.dcp' for cell 'system_i/axi_uartlite_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0.dcp' for cell 'system_i/ps7_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rst_ps7_0_fclk0_0/system_rst_ps7_0_fclk0_0.dcp' for cell 'system_i/rst_ps7_0_fclk0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rst_ps7_0_fclk1_0/system_rst_ps7_0_fclk1_0.dcp' for cell 'system_i/rst_ps7_0_fclk1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0/system_xadc_wiz_0_0.dcp' for cell 'system_i/xadc_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.dcp' for cell 'system_i/Arduino/arduino_intr_en_pins_2_3'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_arduino_input_0/system_arduino_input_0.dcp' for cell 'system_i/Arduino/arduino_no_intr_pins'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_audio_codec_ctrl_0_0/system_audio_codec_ctrl_0_0.dcp' for cell 'system_i/Audio/audio_codec_ctrl_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_clk_wiz_10MHz_0/system_clk_wiz_10MHz_0.dcp' for cell 'system_i/Audio/clk_wiz_10MHz'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_timer_0_3/system_axi_timer_0_3.dcp' for cell 'system_i/User/axi_timer_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_timer_1_2/system_axi_timer_1_2.dcp' for cell 'system_i/User/axi_timer_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_timer_0_2/system_axi_timer_0_2.dcp' for cell 'system_i/User/axi_timer_2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_btns_gpio_0/system_btns_gpio_0.dcp' for cell 'system_i/User/btns_gpio'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_fit_timer_0_0/system_fit_timer_0_0.dcp' for cell 'system_i/User/fit_timer_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_leds_gpio_0/system_leds_gpio_0.dcp' for cell 'system_i/User/leds_gpio'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rgbleds_gpio_0/system_rgbleds_gpio_0.dcp' for cell 'system_i/User/rgbleds_gpio'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_switches_gpio_0/system_switches_gpio_0.dcp' for cell 'system_i/User/switches_gpio'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_user_intc_0/system_user_intc_0.dcp' for cell 'system_i/User/user_intc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_dynclk_0/system_axi_dynclk_0.dcp' for cell 'system_i/Video/axi_dynclk'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0.dcp' for cell 'system_i/Video/axi_vdma'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axis_subset_converter_0_0/system_axis_subset_converter_0_0.dcp' for cell 'system_i/Video/axis_subset_converter_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_hdmi_out_hpd_video_0/system_hdmi_out_hpd_video_0.dcp' for cell 'system_i/Video/hdmi_out_hpd_video'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rgb2dvi_1_0/system_rgb2dvi_1_0.dcp' for cell 'system_i/Video/rgb2dvi_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0.dcp' for cell 'system_i/Video/v_axi4s_vid_out_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_vtc_out_0/system_vtc_out_0.dcp' for cell 'system_i/Video/vtc_out'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_tier2_xbar_0_0/system_tier2_xbar_0_0.dcp' for cell 'system_i/axi_interconnect_0/tier2_xbar_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_tier2_xbar_1_0/system_tier2_xbar_1_0.dcp' for cell 'system_i/axi_interconnect_0/tier2_xbar_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_tier2_xbar_2_0/system_tier2_xbar_2_0.dcp' for cell 'system_i/axi_interconnect_0/tier2_xbar_2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_xbar_0/system_xbar_0.dcp' for cell 'system_i/axi_interconnect_0/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0.dcp' for cell 'system_i/axi_interconnect_0/i00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1.dcp' for cell 'system_i/axi_interconnect_0/i02_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m00_regslice_0/system_m00_regslice_0.dcp' for cell 'system_i/axi_interconnect_0/m00_couplers/m00_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m01_regslice_0/system_m01_regslice_0.dcp' for cell 'system_i/axi_interconnect_0/m01_couplers/m01_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m02_regslice_0/system_m02_regslice_0.dcp' for cell 'system_i/axi_interconnect_0/m02_couplers/m02_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m03_regslice_0/system_m03_regslice_0.dcp' for cell 'system_i/axi_interconnect_0/m03_couplers/m03_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m04_regslice_0/system_m04_regslice_0.dcp' for cell 'system_i/axi_interconnect_0/m04_couplers/m04_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m05_regslice_0/system_m05_regslice_0.dcp' for cell 'system_i/axi_interconnect_0/m05_couplers/m05_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m06_regslice_0/system_m06_regslice_0.dcp' for cell 'system_i/axi_interconnect_0/m06_couplers/m06_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m07_regslice_0/system_m07_regslice_0.dcp' for cell 'system_i/axi_interconnect_0/m07_couplers/m07_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_2/system_auto_pc_2.dcp' for cell 'system_i/axi_interconnect_0/m08_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m08_regslice_0/system_m08_regslice_0.dcp' for cell 'system_i/axi_interconnect_0/m08_couplers/m08_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m09_regslice_0/system_m09_regslice_0.dcp' for cell 'system_i/axi_interconnect_0/m09_couplers/m09_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_3/system_auto_pc_3.dcp' for cell 'system_i/axi_interconnect_0/m10_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_4/system_auto_pc_4.dcp' for cell 'system_i/axi_interconnect_0/m11_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_5/system_auto_pc_5.dcp' for cell 'system_i/axi_interconnect_0/m12_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_6/system_auto_pc_6.dcp' for cell 'system_i/axi_interconnect_0/m13_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_7/system_auto_pc_7.dcp' for cell 'system_i/axi_interconnect_0/m14_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_8/system_auto_pc_8.dcp' for cell 'system_i/axi_interconnect_0/m15_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_9/system_auto_pc_9.dcp' for cell 'system_i/axi_interconnect_0/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_s00_regslice_100/system_s00_regslice_100.dcp' for cell 'system_i/axi_interconnect_0/s00_couplers/s00_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_10/system_auto_pc_10.dcp' for cell 'system_i/axi_mem_intercon_1/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_s00_regslice_101/system_s00_regslice_101.dcp' for cell 'system_i/ps7_0_axi_periph/s00_couplers/s00_regslice'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1172.801 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 893 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. system_i/Audio/clk_wiz_10MHz/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'system_i/Audio/clk_wiz_10MHz/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_audio_codec_ctrl_0_0/src/fifo/fifo.xdc] for cell 'system_i/Audio/audio_codec_ctrl_0/U0/USER_LOGIC_I/Inst_fifo_tx_l/U0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_audio_codec_ctrl_0_0/src/fifo/fifo.xdc] for cell 'system_i/Audio/audio_codec_ctrl_0/U0/USER_LOGIC_I/Inst_fifo_tx_l/U0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_audio_codec_ctrl_0_0/src/fifo/fifo.xdc] for cell 'system_i/Audio/audio_codec_ctrl_0/U0/USER_LOGIC_I/Inst_fifo_tx_r/U0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_audio_codec_ctrl_0_0/src/fifo/fifo.xdc] for cell 'system_i/Audio/audio_codec_ctrl_0/U0/USER_LOGIC_I/Inst_fifo_tx_r/U0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_clk_wiz_10MHz_0/system_clk_wiz_10MHz_0_board.xdc] for cell 'system_i/Audio/clk_wiz_10MHz/inst'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_clk_wiz_10MHz_0/system_clk_wiz_10MHz_0_board.xdc] for cell 'system_i/Audio/clk_wiz_10MHz/inst'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_clk_wiz_10MHz_0/system_clk_wiz_10MHz_0.xdc] for cell 'system_i/Audio/clk_wiz_10MHz/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_clk_wiz_10MHz_0/system_clk_wiz_10MHz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_clk_wiz_10MHz_0/system_clk_wiz_10MHz_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1915.117 ; gain = 583.215
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_clk_wiz_10MHz_0/system_clk_wiz_10MHz_0.xdc] for cell 'system_i/Audio/clk_wiz_10MHz/inst'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_btns_gpio_0/system_btns_gpio_0_board.xdc] for cell 'system_i/User/btns_gpio/U0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_btns_gpio_0/system_btns_gpio_0_board.xdc] for cell 'system_i/User/btns_gpio/U0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_btns_gpio_0/system_btns_gpio_0.xdc] for cell 'system_i/User/btns_gpio/U0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_btns_gpio_0/system_btns_gpio_0.xdc] for cell 'system_i/User/btns_gpio/U0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_leds_gpio_0/system_leds_gpio_0_board.xdc] for cell 'system_i/User/leds_gpio/U0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_leds_gpio_0/system_leds_gpio_0_board.xdc] for cell 'system_i/User/leds_gpio/U0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_leds_gpio_0/system_leds_gpio_0.xdc] for cell 'system_i/User/leds_gpio/U0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_leds_gpio_0/system_leds_gpio_0.xdc] for cell 'system_i/User/leds_gpio/U0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rgbleds_gpio_0/system_rgbleds_gpio_0_board.xdc] for cell 'system_i/User/rgbleds_gpio/U0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rgbleds_gpio_0/system_rgbleds_gpio_0_board.xdc] for cell 'system_i/User/rgbleds_gpio/U0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rgbleds_gpio_0/system_rgbleds_gpio_0.xdc] for cell 'system_i/User/rgbleds_gpio/U0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rgbleds_gpio_0/system_rgbleds_gpio_0.xdc] for cell 'system_i/User/rgbleds_gpio/U0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_switches_gpio_0/system_switches_gpio_0_board.xdc] for cell 'system_i/User/switches_gpio/U0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_switches_gpio_0/system_switches_gpio_0_board.xdc] for cell 'system_i/User/switches_gpio/U0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_switches_gpio_0/system_switches_gpio_0.xdc] for cell 'system_i/User/switches_gpio/U0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_switches_gpio_0/system_switches_gpio_0.xdc] for cell 'system_i/User/switches_gpio/U0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_user_intc_0/system_user_intc_0.xdc] for cell 'system_i/User/user_intc/U0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_user_intc_0/system_user_intc_0.xdc] for cell 'system_i/User/user_intc/U0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0.xdc] for cell 'system_i/Video/axi_vdma/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0.xdc:65]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0.xdc:69]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0.xdc:93]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0.xdc:97]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0.xdc:101]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0.xdc:105]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0.xdc:109]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0.xdc:113]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0.xdc:121]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0.xdc:125]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0.xdc:129]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0.xdc:141]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0.xdc:145]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0.xdc:149]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0.xdc:153]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0.xdc:157]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0.xdc:161]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0.xdc:165]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0.xdc:169]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0.xdc:173]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0.xdc:177]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0.xdc:181]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0.xdc:185]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0.xdc:189]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0.xdc:197]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0.xdc:205]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0.xdc:213]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0.xdc:217]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0.xdc:221]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0.xdc:225]
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0.xdc] for cell 'system_i/Video/axi_vdma/U0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_hdmi_out_hpd_video_0/system_hdmi_out_hpd_video_0_board.xdc] for cell 'system_i/Video/hdmi_out_hpd_video/U0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_hdmi_out_hpd_video_0/system_hdmi_out_hpd_video_0_board.xdc] for cell 'system_i/Video/hdmi_out_hpd_video/U0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_hdmi_out_hpd_video_0/system_hdmi_out_hpd_video_0.xdc] for cell 'system_i/Video/hdmi_out_hpd_video/U0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_hdmi_out_hpd_video_0/system_hdmi_out_hpd_video_0.xdc] for cell 'system_i/Video/hdmi_out_hpd_video/U0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rgb2dvi_1_0/src/rgb2dvi.xdc] for cell 'system_i/Video/rgb2dvi_1/U0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rgb2dvi_1_0/src/rgb2dvi.xdc] for cell 'system_i/Video/rgb2dvi_1/U0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0.xdc] for cell 'system_i/ps7_0/inst'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0.xdc] for cell 'system_i/ps7_0/inst'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rst_ps7_0_fclk0_0/system_rst_ps7_0_fclk0_0_board.xdc] for cell 'system_i/rst_ps7_0_fclk0/U0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rst_ps7_0_fclk0_0/system_rst_ps7_0_fclk0_0_board.xdc] for cell 'system_i/rst_ps7_0_fclk0/U0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rst_ps7_0_fclk0_0/system_rst_ps7_0_fclk0_0.xdc] for cell 'system_i/rst_ps7_0_fclk0/U0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rst_ps7_0_fclk0_0/system_rst_ps7_0_fclk0_0.xdc] for cell 'system_i/rst_ps7_0_fclk0/U0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rst_ps7_0_fclk1_0/system_rst_ps7_0_fclk1_0_board.xdc] for cell 'system_i/rst_ps7_0_fclk1/U0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rst_ps7_0_fclk1_0/system_rst_ps7_0_fclk1_0_board.xdc] for cell 'system_i/rst_ps7_0_fclk1/U0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rst_ps7_0_fclk1_0/system_rst_ps7_0_fclk1_0.xdc] for cell 'system_i/rst_ps7_0_fclk1/U0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rst_ps7_0_fclk1_0/system_rst_ps7_0_fclk1_0.xdc] for cell 'system_i/rst_ps7_0_fclk1/U0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0/system_xadc_wiz_0_0.xdc] for cell 'system_i/xadc_wiz_0/U0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0/system_xadc_wiz_0_0.xdc] for cell 'system_i/xadc_wiz_0/U0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_timer_0_3/system_axi_timer_0_3.xdc] for cell 'system_i/User/axi_timer_0/U0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_timer_0_3/system_axi_timer_0_3.xdc] for cell 'system_i/User/axi_timer_0/U0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_timer_1_2/system_axi_timer_1_2.xdc] for cell 'system_i/User/axi_timer_1/U0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_timer_1_2/system_axi_timer_1_2.xdc] for cell 'system_i/User/axi_timer_1/U0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_timer_0_2/system_axi_timer_0_2.xdc] for cell 'system_i/User/axi_timer_2/U0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_timer_0_2/system_axi_timer_0_2.xdc] for cell 'system_i/User/axi_timer_2/U0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc] for cell 'system_i/Arduino/arduino_intr_en_pins_2_3/U0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc] for cell 'system_i/Arduino/arduino_intr_en_pins_2_3/U0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc] for cell 'system_i/Arduino/arduino_intr_en_pins_2_3/U0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc] for cell 'system_i/Arduino/arduino_intr_en_pins_2_3/U0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_arduino_input_0/system_arduino_input_0_board.xdc] for cell 'system_i/Arduino/arduino_no_intr_pins/U0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_arduino_input_0/system_arduino_input_0_board.xdc] for cell 'system_i/Arduino/arduino_no_intr_pins/U0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_arduino_input_0/system_arduino_input_0.xdc] for cell 'system_i/Arduino/arduino_no_intr_pins/U0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_arduino_input_0/system_arduino_input_0.xdc] for cell 'system_i/Arduino/arduino_no_intr_pins/U0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_uartlite_0_0/system_axi_uartlite_0_0_board.xdc] for cell 'system_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_uartlite_0_0/system_axi_uartlite_0_0_board.xdc] for cell 'system_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_uartlite_0_0/system_axi_uartlite_0_0.xdc] for cell 'system_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_uartlite_0_0/system_axi_uartlite_0_0.xdc] for cell 'system_i/axi_uartlite_0/U0'
+Parsing XDC File [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc]
+WARNING: [Vivado 12-584] No ports matched 'pmoda_rpi_gpio_tri_io[1]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmoda_rpi_gpio_tri_io[0]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmoda_rpi_gpio_tri_io[3]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmoda_rpi_gpio_tri_io[2]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmoda_rpi_gpio_tri_io[5]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmoda_rpi_gpio_tri_io[4]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmoda_rpi_gpio_tri_io[7]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmoda_rpi_gpio_tri_io[6]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmoda_rpi_gpio_tri_io[2]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmoda_rpi_gpio_tri_io[3]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmoda_rpi_gpio_tri_io[6]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmoda_rpi_gpio_tri_io[7]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodb_gpio_tri_io[1]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodb_gpio_tri_io[0]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodb_gpio_tri_io[3]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodb_gpio_tri_io[2]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodb_gpio_tri_io[5]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodb_gpio_tri_io[4]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodb_gpio_tri_io[7]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodb_gpio_tri_io[6]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodb_gpio_tri_io[2]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodb_gpio_tri_io[3]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodb_gpio_tri_io[6]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodb_gpio_tri_io[7]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_gpio_tri_io[14]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:128]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:128]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_gpio_tri_io[15]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:129]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:129]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_gpio_tri_io[16]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:130]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:130]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_gpio_tri_io[17]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:131]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:131]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_gpio_tri_io[18]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:132]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:132]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_gpio_tri_io[19]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:133]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:133]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_direct_iic_scl_io'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:139]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:139]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_direct_iic_sda_io'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:140]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:140]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_direct_iic_scl_io'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:141]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:141]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_direct_iic_sda_io'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:142]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:142]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_direct_spi_io1_io'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:145]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:145]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_direct_spi_io0_io'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:146]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:146]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_direct_spi_sck_io'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:147]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:147]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_direct_spi_ss_io'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:148]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:148]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_clk_p'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:165]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports hdmi_in_clk_p]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:165]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_clk_n'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:168]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:168]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_clk_p'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:169]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:169]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[0]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:170]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:170]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[0]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:171]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:171]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[1]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:172]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:172]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[1]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:173]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:173]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[2]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:174]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:174]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[2]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:175]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:175]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_hpd[0]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:176]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:176]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_ddc_scl_io'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:177]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:177]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_ddc_sda_io'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:178]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:178]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[0]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:235]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:235]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[1]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:236]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:236]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[2]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:237]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:237]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[3]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:238]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:238]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[4]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:239]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:239]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[5]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:240]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:240]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[6]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:241]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:241]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[7]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:242]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:242]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[8]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:243]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:243]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[9]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:244]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:244]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[10]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:245]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:245]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[11]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:246]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:246]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[12]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:247]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:247]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[13]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:248]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:248]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[14]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:249]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:249]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[15]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:250]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:250]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[16]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:251]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:251]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[17]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:252]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:252]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[18]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:253]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:253]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[19]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:254]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:254]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc]
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_user_intc_0/system_user_intc_0_clocks.xdc] for cell 'system_i/User/user_intc/U0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_user_intc_0/system_user_intc_0_clocks.xdc] for cell 'system_i/User/user_intc/U0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0_clocks.xdc] for cell 'system_i/Video/axi_vdma/U0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0_clocks.xdc] for cell 'system_i/Video/axi_vdma/U0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rgb2dvi_1_0/src/rgb2dvi_clocks.xdc] for cell 'system_i/Video/rgb2dvi_1/U0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rgb2dvi_1_0/src/rgb2dvi_clocks.xdc] for cell 'system_i/Video/rgb2dvi_1/U0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0_clocks.xdc] for cell 'system_i/Video/v_axi4s_vid_out_0/inst'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0_clocks.xdc] for cell 'system_i/Video/v_axi4s_vid_out_0/inst'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_vtc_out_0/system_vtc_out_0_clocks.xdc] for cell 'system_i/Video/vtc_out/U0'
+INFO: [Timing 38-2] Deriving generated clocks [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_vtc_out_0/system_vtc_out_0_clocks.xdc:2]
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_vtc_out_0/system_vtc_out_0_clocks.xdc] for cell 'system_i/Video/vtc_out/U0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_s00_regslice_100/system_s00_regslice_100_clocks.xdc] for cell 'system_i/axi_interconnect_0/s00_couplers/s00_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_s00_regslice_100/system_s00_regslice_100_clocks.xdc:10]
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_s00_regslice_100/system_s00_regslice_100_clocks.xdc] for cell 'system_i/axi_interconnect_0/s00_couplers/s00_regslice/inst'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m00_regslice_0/system_m00_regslice_0_clocks.xdc] for cell 'system_i/axi_interconnect_0/m00_couplers/m00_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m00_regslice_0/system_m00_regslice_0_clocks.xdc:10]
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m00_regslice_0/system_m00_regslice_0_clocks.xdc] for cell 'system_i/axi_interconnect_0/m00_couplers/m00_regslice/inst'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m01_regslice_0/system_m01_regslice_0_clocks.xdc] for cell 'system_i/axi_interconnect_0/m01_couplers/m01_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m01_regslice_0/system_m01_regslice_0_clocks.xdc:10]
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m01_regslice_0/system_m01_regslice_0_clocks.xdc] for cell 'system_i/axi_interconnect_0/m01_couplers/m01_regslice/inst'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m02_regslice_0/system_m02_regslice_0_clocks.xdc] for cell 'system_i/axi_interconnect_0/m02_couplers/m02_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m02_regslice_0/system_m02_regslice_0_clocks.xdc:10]
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m02_regslice_0/system_m02_regslice_0_clocks.xdc] for cell 'system_i/axi_interconnect_0/m02_couplers/m02_regslice/inst'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m03_regslice_0/system_m03_regslice_0_clocks.xdc] for cell 'system_i/axi_interconnect_0/m03_couplers/m03_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m03_regslice_0/system_m03_regslice_0_clocks.xdc:10]
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m03_regslice_0/system_m03_regslice_0_clocks.xdc] for cell 'system_i/axi_interconnect_0/m03_couplers/m03_regslice/inst'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m04_regslice_0/system_m04_regslice_0_clocks.xdc] for cell 'system_i/axi_interconnect_0/m04_couplers/m04_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m04_regslice_0/system_m04_regslice_0_clocks.xdc:10]
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m04_regslice_0/system_m04_regslice_0_clocks.xdc] for cell 'system_i/axi_interconnect_0/m04_couplers/m04_regslice/inst'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m05_regslice_0/system_m05_regslice_0_clocks.xdc] for cell 'system_i/axi_interconnect_0/m05_couplers/m05_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m05_regslice_0/system_m05_regslice_0_clocks.xdc:10]
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m05_regslice_0/system_m05_regslice_0_clocks.xdc] for cell 'system_i/axi_interconnect_0/m05_couplers/m05_regslice/inst'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m06_regslice_0/system_m06_regslice_0_clocks.xdc] for cell 'system_i/axi_interconnect_0/m06_couplers/m06_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m06_regslice_0/system_m06_regslice_0_clocks.xdc:10]
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m06_regslice_0/system_m06_regslice_0_clocks.xdc] for cell 'system_i/axi_interconnect_0/m06_couplers/m06_regslice/inst'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m07_regslice_0/system_m07_regslice_0_clocks.xdc] for cell 'system_i/axi_interconnect_0/m07_couplers/m07_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m07_regslice_0/system_m07_regslice_0_clocks.xdc:10]
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m07_regslice_0/system_m07_regslice_0_clocks.xdc] for cell 'system_i/axi_interconnect_0/m07_couplers/m07_regslice/inst'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m08_regslice_0/system_m08_regslice_0_clocks.xdc] for cell 'system_i/axi_interconnect_0/m08_couplers/m08_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m08_regslice_0/system_m08_regslice_0_clocks.xdc:10]
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m08_regslice_0/system_m08_regslice_0_clocks.xdc] for cell 'system_i/axi_interconnect_0/m08_couplers/m08_regslice/inst'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m09_regslice_0/system_m09_regslice_0_clocks.xdc] for cell 'system_i/axi_interconnect_0/m09_couplers/m09_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m09_regslice_0/system_m09_regslice_0_clocks.xdc:10]
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m09_regslice_0/system_m09_regslice_0_clocks.xdc] for cell 'system_i/axi_interconnect_0/m09_couplers/m09_regslice/inst'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_s00_regslice_101/system_s00_regslice_101_clocks.xdc] for cell 'system_i/ps7_0_axi_periph/s00_couplers/s00_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_s00_regslice_101/system_s00_regslice_101_clocks.xdc:10]
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_s00_regslice_101/system_s00_regslice_101_clocks.xdc] for cell 'system_i/ps7_0_axi_periph/s00_couplers/s00_regslice/inst'
+INFO: [Project 1-1715] 6 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 24 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1915.117 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 11 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+
+67 Infos, 114 Warnings, 70 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 1915.117 ; gain = 771.199
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 1915.117 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1c2446766
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1915.117 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 3 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 21d92d6ea
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2105.414 ; gain = 2.105
+INFO: [Opt 31-389] Phase Retarget created 359 cells and removed 623 cells
+INFO: [Opt 31-1021] In phase Retarget, 86 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 21852aba8
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2105.414 ; gain = 2.105
+INFO: [Opt 31-389] Phase Constant propagation created 284 cells and removed 1687 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 432 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 211179971
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2105.414 ; gain = 2.105
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 3521 cells
+INFO: [Opt 31-1021] In phase Sweep, 84 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 211179971
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2105.414 ; gain = 2.105
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 211179971
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2105.414 ; gain = 2.105
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 211179971
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2105.414 ; gain = 2.105
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 19 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             359  |             623  |                                             86  |
+|  Constant propagation         |             284  |            1687  |                                            432  |
+|  Sweep                        |               0  |            3521  |                                             84  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             19  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 2105.414 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 148bc25b1
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2105.414 ; gain = 2.105
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 2 BRAM(s) out of a total of 6 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 1 WE to EN ports
+Number of BRAM Ports augmented: 2 newly gated: 1 Total Ports: 12
+Ending PowerOpt Patch Enables Task | Checksum: 18d24a91f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.131 . Memory (MB): peak = 2326.137 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 18d24a91f
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2326.137 ; gain = 220.723
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 18d24a91f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2326.137 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2326.137 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 1613d6da3
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2326.137 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+93 Infos, 114 Warnings, 70 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 2326.137 ; gain = 411.020
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 2326.137 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/impl_1/system_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2326.137 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file system_wrapper_drc_opted.rpt -pb system_wrapper_drc_opted.pb -rpx system_wrapper_drc_opted.rpx
+Command: report_drc -file system_wrapper_drc_opted.rpt -pb system_wrapper_drc_opted.pb -rpx system_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/impl_1/system_wrapper_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2326.137 ; gain = 0.000
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/WEBWE[0] (net: system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/WEBWE[1] (net: system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/WEBWE[2] (net: system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/WEBWE[3] (net: system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/WEBWE[4] (net: system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/WEBWE[5] (net: system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/WEBWE[6] (net: system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/WEBWE[7] (net: system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1 has an input control pin system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1/ENBWREN (net: system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1 has an input control pin system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1/WEBWE[0] (net: system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1 has an input control pin system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1/WEBWE[1] (net: system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1 has an input control pin system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1/WEBWE[2] (net: system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 12 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2326.137 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 136b46819
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 2326.137 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2326.137 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 96ed07bd
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2326.137 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 19f9c3705
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2326.137 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 19f9c3705
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2326.137 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 19f9c3705
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2326.137 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 1831f3dfe
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 2326.137 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1df461138
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 2326.137 ; gain = 0.000
+
+Phase 2.3 Global Placement Core
+
+Phase 2.3.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 3 LUTNM shape to break, 543 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 3, two critical 0, total 3, new lutff created 0
+INFO: [Physopt 32-775] End 1 Pass. Optimized 207 nets or cells. Created 3 new cells, deleted 204 existing cells and moved 0 existing cell
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2326.137 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            3  |            204  |                   207  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            3  |            204  |                   207  |           0  |           8  |  00:00:01  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.3.1 Physical Synthesis In Placer | Checksum: 16e5859ef
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:20 . Memory (MB): peak = 2326.137 ; gain = 0.000
+Phase 2.3 Global Placement Core | Checksum: 20c00f967
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:21 . Memory (MB): peak = 2326.137 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 20c00f967
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:21 . Memory (MB): peak = 2326.137 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 220a19436
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:22 . Memory (MB): peak = 2326.137 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1ac04d93e
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:24 . Memory (MB): peak = 2326.137 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 173b6d161
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:24 . Memory (MB): peak = 2326.137 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 17e686fe9
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:24 . Memory (MB): peak = 2326.137 ; gain = 0.000
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 17b4ffb8c
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:25 . Memory (MB): peak = 2326.137 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 1d152e715
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:33 . Memory (MB): peak = 2326.137 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 1fa9f7f22
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:35 . Memory (MB): peak = 2326.137 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 21c1a1bd1
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:35 . Memory (MB): peak = 2326.137 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 21c1a1bd1
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:35 . Memory (MB): peak = 2326.137 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 17ff5b624
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.096 | TNS=-0.418 |
+Phase 1 Physical Synthesis Initialization | Checksum: 114bfc5e2
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 2326.137 ; gain = 0.000
+INFO: [Place 46-33] Processed net system_i/Video/vtc_out/U0/U_VIDEO_CTRL/GEN_HAS_IRQ.irq_i_1_n_0, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 1, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 10c7ff0ae
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2326.137 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 17ff5b624
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:42 . Memory (MB): peak = 2326.137 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.507. For the most accurate timing information please run report_timing.
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:43 . Memory (MB): peak = 2326.137 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 12fc697c4
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:44 . Memory (MB): peak = 2326.137 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 12fc697c4
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:44 . Memory (MB): peak = 2326.137 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                1x1|
+|___________|___________________|___________________|
+|      South|                1x1|                1x1|
+|___________|___________________|___________________|
+|       East|                1x1|                1x1|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 12fc697c4
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:44 . Memory (MB): peak = 2326.137 ; gain = 0.000
+Phase 4.3 Placer Reporting | Checksum: 12fc697c4
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:44 . Memory (MB): peak = 2326.137 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 2326.137 ; gain = 0.000
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:44 . Memory (MB): peak = 2326.137 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: faee480d
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:44 . Memory (MB): peak = 2326.137 ; gain = 0.000
+Ending Placer Task | Checksum: c3b80018
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:44 . Memory (MB): peak = 2326.137 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+134 Infos, 126 Warnings, 70 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:08 ; elapsed = 00:00:46 . Memory (MB): peak = 2326.137 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 2326.137 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/impl_1/system_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 2326.137 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_io -file system_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 2326.137 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file system_wrapper_utilization_placed.rpt -pb system_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file system_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 2326.137 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: ac585a77 ConstDB: 0 ShapeSum: 175fa5a1 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: ac131412
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:21 . Memory (MB): peak = 2416.023 ; gain = 63.051
+Post Restoration Checksum: NetGraph: a90ca593 NumContArr: 3066e7f Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: ac131412
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:21 . Memory (MB): peak = 2416.023 ; gain = 63.051
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: ac131412
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:21 . Memory (MB): peak = 2420.578 ; gain = 67.605
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: ac131412
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:21 . Memory (MB): peak = 2420.578 ; gain = 67.605
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1fa6ebcfa
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:27 . Memory (MB): peak = 2444.484 ; gain = 91.512
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.634  | TNS=0.000  | WHS=-0.344 | THS=-282.595|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 22e1e1b48
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:32 . Memory (MB): peak = 2464.637 ; gain = 111.664
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.634  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 27d155656
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:32 . Memory (MB): peak = 2476.727 ; gain = 123.754
+Phase 2 Router Initialization | Checksum: 1d4e633c8
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:32 . Memory (MB): peak = 2476.727 ; gain = 123.754
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.00222636 %
+  Global Horizontal Routing Utilization  = 0.00025355 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 21854
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 21853
+  Number of Partially Routed Nets     = 1
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 1d4e633c8
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:33 . Memory (MB): peak = 2476.727 ; gain = 123.754
+Phase 3 Initial Routing | Checksum: 190f9892d
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:35 . Memory (MB): peak = 2476.727 ; gain = 123.754
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 2521
+ Number of Nodes with overlaps = 608
+ Number of Nodes with overlaps = 248
+ Number of Nodes with overlaps = 108
+ Number of Nodes with overlaps = 27
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.314  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 117443feb
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:01:03 . Memory (MB): peak = 2476.727 ; gain = 123.754
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 53
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.314  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1a5dcd8f9
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:01:12 . Memory (MB): peak = 2476.727 ; gain = 123.754
+Phase 4 Rip-up And Reroute | Checksum: 1a5dcd8f9
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:01:12 . Memory (MB): peak = 2476.727 ; gain = 123.754
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 107bd22da
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:01:14 . Memory (MB): peak = 2476.727 ; gain = 123.754
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.314  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Delay CleanUp | Checksum: 124760d80
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:01:14 . Memory (MB): peak = 2476.727 ; gain = 123.754
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 124760d80
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:01:14 . Memory (MB): peak = 2476.727 ; gain = 123.754
+Phase 5 Delay and Skew Optimization | Checksum: 124760d80
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:01:14 . Memory (MB): peak = 2476.727 ; gain = 123.754
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: f82ee4ba
+
+Time (s): cpu = 00:01:35 ; elapsed = 00:01:15 . Memory (MB): peak = 2476.727 ; gain = 123.754
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.314  | TNS=0.000  | WHS=0.019  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1d672a29a
+
+Time (s): cpu = 00:01:35 ; elapsed = 00:01:15 . Memory (MB): peak = 2476.727 ; gain = 123.754
+Phase 6 Post Hold Fix | Checksum: 1d672a29a
+
+Time (s): cpu = 00:01:35 ; elapsed = 00:01:15 . Memory (MB): peak = 2476.727 ; gain = 123.754
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 4.50606 %
+  Global Horizontal Routing Utilization  = 5.34711 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 1b94e9cb8
+
+Time (s): cpu = 00:01:35 ; elapsed = 00:01:16 . Memory (MB): peak = 2476.727 ; gain = 123.754
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1b94e9cb8
+
+Time (s): cpu = 00:01:35 ; elapsed = 00:01:16 . Memory (MB): peak = 2476.727 ; gain = 123.754
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1996b6463
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:01:18 . Memory (MB): peak = 2476.727 ; gain = 123.754
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.314  | TNS=0.000  | WHS=0.019  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 1996b6463
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:01:18 . Memory (MB): peak = 2476.727 ; gain = 123.754
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:01:18 . Memory (MB): peak = 2476.727 ; gain = 123.754
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+154 Infos, 126 Warnings, 70 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:48 ; elapsed = 00:01:24 . Memory (MB): peak = 2476.727 ; gain = 150.590
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 2480.824 ; gain = 4.098
+INFO: [Common 17-1381] The checkpoint 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/impl_1/system_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 2480.824 ; gain = 4.098
+INFO: [runtcl-4] Executing : report_drc -file system_wrapper_drc_routed.rpt -pb system_wrapper_drc_routed.pb -rpx system_wrapper_drc_routed.rpx
+Command: report_drc -file system_wrapper_drc_routed.rpt -pb system_wrapper_drc_routed.pb -rpx system_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/impl_1/system_wrapper_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 2542.391 ; gain = 61.566
+INFO: [runtcl-4] Executing : report_methodology -file system_wrapper_methodology_drc_routed.rpt -pb system_wrapper_methodology_drc_routed.pb -rpx system_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file system_wrapper_methodology_drc_routed.rpt -pb system_wrapper_methodology_drc_routed.pb -rpx system_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/impl_1/system_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 2544.367 ; gain = 1.977
+INFO: [runtcl-4] Executing : report_power -file system_wrapper_power_routed.rpt -pb system_wrapper_power_summary_routed.pb -rpx system_wrapper_power_routed.rpx
+Command: report_power -file system_wrapper_power_routed.rpt -pb system_wrapper_power_summary_routed.pb -rpx system_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+166 Infos, 127 Warnings, 70 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 2558.383 ; gain = 14.016
+INFO: [runtcl-4] Executing : report_route_status -file system_wrapper_route_status.rpt -pb system_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file system_wrapper_timing_summary_routed.rpt -pb system_wrapper_timing_summary_routed.pb -rpx system_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file system_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file system_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file system_wrapper_bus_skew_routed.rpt -pb system_wrapper_bus_skew_routed.pb -rpx system_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Memdata 28-208] The XPM instance: <system_i/Video/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <system_i/Video/v_axi4s_vid_out_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <system_i/Video/axi_vdma>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+Command: write_bitstream -force system_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/WEBWE[0] (net: system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/WEBWE[1] (net: system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/WEBWE[2] (net: system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/WEBWE[3] (net: system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/WEBWE[4] (net: system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/WEBWE[5] (net: system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/WEBWE[6] (net: system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/WEBWE[7] (net: system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1 has an input control pin system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1/ENBWREN (net: system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1 has an input control pin system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1/WEBWE[0] (net: system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1 has an input control pin system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1/WEBWE[1] (net: system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1 has an input control pin system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1/WEBWE[2] (net: system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC RTSTAT-10] No routable loads: 19 net(s) have no routable loads. The problem bus(es) and/or net(s) are system_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, system_i/Audio/audio_codec_ctrl_0/U0/USER_LOGIC_I/Inst_fifo_tx_r/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, system_i/Audio/audio_codec_ctrl_0/U0/USER_LOGIC_I/Inst_fifo_tx_l/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, system_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, system_i/Audio/audio_codec_ctrl_0/U0/USER_LOGIC_I/Inst_fifo_tx_r/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, system_i/Audio/audio_codec_ctrl_0/U0/USER_LOGIC_I/Inst_fifo_tx_l/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, system_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, system_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, system_i/Audio/audio_codec_ctrl_0/U0/USER_LOGIC_I/Inst_fifo_tx_r/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, system_i/Audio/audio_codec_ctrl_0/U0/USER_LOGIC_I/Inst_fifo_tx_l/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, system_i/Audio/audio_codec_ctrl_0/U0/USER_LOGIC_I/Inst_fifo_tx_l/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i, system_i/Audio/audio_codec_ctrl_0/U0/USER_LOGIC_I/Inst_fifo_tx_r/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i, system_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[2:0], system_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/user_valid, and system_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg[2:0].
+INFO: [DRC REQP-165] writefirst: Synchronous clocking is detected for BRAM (system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [DRC REQP-181] writefirst: Synchronous clocking is detected for BRAM (system_i/Video/axi_vdma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 13 Warnings, 2 Advisories
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./system_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+16 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:29 ; elapsed = 00:00:22 . Memory (MB): peak = 3086.887 ; gain = 497.195
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 30 17:25:55 2023...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Aug 28 09:42:09 2023
+# Process ID: 2596
+# Current directory: C:/sources/S3_ES_Fall-23/ES_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/system_rgb2dvi_1_0_synth_1
+# Command line: vivado.exe -log system_rgb2dvi_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_rgb2dvi_1_0.tcl
+# Log file: C:/sources/S3_ES_Fall-23/ES_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/system_rgb2dvi_1_0_synth_1/system_rgb2dvi_1_0.vds
+# Journal file: C:/sources/S3_ES_Fall-23/ES_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/system_rgb2dvi_1_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source system_rgb2dvi_1_0.tcl -notrace

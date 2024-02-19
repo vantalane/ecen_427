@@ -1,0 +1,1300 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Aug 30 17:20:23 2023
+# Process ID: 18336
+# Current directory: C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1
+# Command line: vivado.exe -log system_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_wrapper.tcl
+# Log file: C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/system_wrapper.vds
+# Journal file: C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source system_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.ipdefs/digilent_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1126.805 ; gain = 0.000
+Command: synth_design -top system_wrapper -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14420
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1245.516 ; gain = 118.711
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'system_wrapper' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:76]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'IIC_1_scl_iobuf' of component 'IOBUF' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:197]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'IIC_1_sda_iobuf' of component 'IOBUF' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:204]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'arduino_gpio_intr_en_tri_iobuf_0' of component 'IOBUF' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:211]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'arduino_gpio_intr_en_tri_iobuf_1' of component 'IOBUF' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:218]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'arduino_gpio_no_intr_tri_iobuf_0' of component 'IOBUF' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:225]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'arduino_gpio_no_intr_tri_iobuf_1' of component 'IOBUF' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:232]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'arduino_gpio_no_intr_tri_iobuf_2' of component 'IOBUF' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:239]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'arduino_gpio_no_intr_tri_iobuf_3' of component 'IOBUF' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:246]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'arduino_gpio_no_intr_tri_iobuf_4' of component 'IOBUF' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:253]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'arduino_gpio_no_intr_tri_iobuf_5' of component 'IOBUF' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:260]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'arduino_gpio_no_intr_tri_iobuf_6' of component 'IOBUF' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:267]
+INFO: [Synth 8-3491] module 'system' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:13520' bound to instance 'system_i' of component 'system' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:274]
+INFO: [Synth 8-638] synthesizing module 'system' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:13594]
+INFO: [Synth 8-638] synthesizing module 'Arduino_imp_9LPOD4' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:62]
+INFO: [Synth 8-3491] module 'system_axi_gpio_0_0' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_axi_gpio_0_0_stub.vhdl:5' bound to instance 'arduino_intr_en_pins_2_3' of component 'system_axi_gpio_0_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:203]
+INFO: [Synth 8-638] synthesizing module 'system_axi_gpio_0_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_axi_gpio_0_0_stub.vhdl:34]
+INFO: [Synth 8-3491] module 'system_arduino_input_0' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_arduino_input_0_stub.vhdl:5' bound to instance 'arduino_no_intr_pins' of component 'system_arduino_input_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:229]
+INFO: [Synth 8-638] synthesizing module 'system_arduino_input_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_arduino_input_0_stub.vhdl:33]
+INFO: [Synth 8-256] done synthesizing module 'Arduino_imp_9LPOD4' (2#1) [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'Audio_imp_1PH07WP' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:290]
+INFO: [Synth 8-3491] module 'system_audio_codec_ctrl_0_0' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_audio_codec_ctrl_0_0_stub.vhdl:5' bound to instance 'audio_codec_ctrl_0' of component 'system_audio_codec_ctrl_0_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:382]
+INFO: [Synth 8-638] synthesizing module 'system_audio_codec_ctrl_0_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_audio_codec_ctrl_0_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'system_clk_wiz_10MHz_0' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_clk_wiz_10MHz_0_stub.vhdl:5' bound to instance 'clk_wiz_10MHz' of component 'system_clk_wiz_10MHz_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:410]
+INFO: [Synth 8-638] synthesizing module 'system_clk_wiz_10MHz_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_clk_wiz_10MHz_0_stub.vhdl:15]
+INFO: [Synth 8-256] done synthesizing module 'Audio_imp_1PH07WP' (3#1) [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:290]
+INFO: [Synth 8-3491] module 'system_Concat_Interrupts_0' declared at 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_Concat_Interrupts_0/synth/system_Concat_Interrupts_0.v:60' bound to instance 'Concat_Interrupts' of component 'system_Concat_Interrupts_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:14573]
+INFO: [Synth 8-6157] synthesizing module 'system_Concat_Interrupts_0' [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_Concat_Interrupts_0/synth/system_Concat_Interrupts_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter IN32_WIDTH bound to: 1 - type: integer 
+	Parameter IN33_WIDTH bound to: 1 - type: integer 
+	Parameter IN34_WIDTH bound to: 1 - type: integer 
+	Parameter IN35_WIDTH bound to: 1 - type: integer 
+	Parameter IN36_WIDTH bound to: 1 - type: integer 
+	Parameter IN37_WIDTH bound to: 1 - type: integer 
+	Parameter IN38_WIDTH bound to: 1 - type: integer 
+	Parameter IN39_WIDTH bound to: 1 - type: integer 
+	Parameter IN40_WIDTH bound to: 1 - type: integer 
+	Parameter IN41_WIDTH bound to: 1 - type: integer 
+	Parameter IN42_WIDTH bound to: 1 - type: integer 
+	Parameter IN43_WIDTH bound to: 1 - type: integer 
+	Parameter IN44_WIDTH bound to: 1 - type: integer 
+	Parameter IN45_WIDTH bound to: 1 - type: integer 
+	Parameter IN46_WIDTH bound to: 1 - type: integer 
+	Parameter IN47_WIDTH bound to: 1 - type: integer 
+	Parameter IN48_WIDTH bound to: 1 - type: integer 
+	Parameter IN49_WIDTH bound to: 1 - type: integer 
+	Parameter IN50_WIDTH bound to: 1 - type: integer 
+	Parameter IN51_WIDTH bound to: 1 - type: integer 
+	Parameter IN52_WIDTH bound to: 1 - type: integer 
+	Parameter IN53_WIDTH bound to: 1 - type: integer 
+	Parameter IN54_WIDTH bound to: 1 - type: integer 
+	Parameter IN55_WIDTH bound to: 1 - type: integer 
+	Parameter IN56_WIDTH bound to: 1 - type: integer 
+	Parameter IN57_WIDTH bound to: 1 - type: integer 
+	Parameter IN58_WIDTH bound to: 1 - type: integer 
+	Parameter IN59_WIDTH bound to: 1 - type: integer 
+	Parameter IN60_WIDTH bound to: 1 - type: integer 
+	Parameter IN61_WIDTH bound to: 1 - type: integer 
+	Parameter IN62_WIDTH bound to: 1 - type: integer 
+	Parameter IN63_WIDTH bound to: 1 - type: integer 
+	Parameter IN64_WIDTH bound to: 1 - type: integer 
+	Parameter IN65_WIDTH bound to: 1 - type: integer 
+	Parameter IN66_WIDTH bound to: 1 - type: integer 
+	Parameter IN67_WIDTH bound to: 1 - type: integer 
+	Parameter IN68_WIDTH bound to: 1 - type: integer 
+	Parameter IN69_WIDTH bound to: 1 - type: integer 
+	Parameter IN70_WIDTH bound to: 1 - type: integer 
+	Parameter IN71_WIDTH bound to: 1 - type: integer 
+	Parameter IN72_WIDTH bound to: 1 - type: integer 
+	Parameter IN73_WIDTH bound to: 1 - type: integer 
+	Parameter IN74_WIDTH bound to: 1 - type: integer 
+	Parameter IN75_WIDTH bound to: 1 - type: integer 
+	Parameter IN76_WIDTH bound to: 1 - type: integer 
+	Parameter IN77_WIDTH bound to: 1 - type: integer 
+	Parameter IN78_WIDTH bound to: 1 - type: integer 
+	Parameter IN79_WIDTH bound to: 1 - type: integer 
+	Parameter IN80_WIDTH bound to: 1 - type: integer 
+	Parameter IN81_WIDTH bound to: 1 - type: integer 
+	Parameter IN82_WIDTH bound to: 1 - type: integer 
+	Parameter IN83_WIDTH bound to: 1 - type: integer 
+	Parameter IN84_WIDTH bound to: 1 - type: integer 
+	Parameter IN85_WIDTH bound to: 1 - type: integer 
+	Parameter IN86_WIDTH bound to: 1 - type: integer 
+	Parameter IN87_WIDTH bound to: 1 - type: integer 
+	Parameter IN88_WIDTH bound to: 1 - type: integer 
+	Parameter IN89_WIDTH bound to: 1 - type: integer 
+	Parameter IN90_WIDTH bound to: 1 - type: integer 
+	Parameter IN91_WIDTH bound to: 1 - type: integer 
+	Parameter IN92_WIDTH bound to: 1 - type: integer 
+	Parameter IN93_WIDTH bound to: 1 - type: integer 
+	Parameter IN94_WIDTH bound to: 1 - type: integer 
+	Parameter IN95_WIDTH bound to: 1 - type: integer 
+	Parameter IN96_WIDTH bound to: 1 - type: integer 
+	Parameter IN97_WIDTH bound to: 1 - type: integer 
+	Parameter IN98_WIDTH bound to: 1 - type: integer 
+	Parameter IN99_WIDTH bound to: 1 - type: integer 
+	Parameter IN100_WIDTH bound to: 1 - type: integer 
+	Parameter IN101_WIDTH bound to: 1 - type: integer 
+	Parameter IN102_WIDTH bound to: 1 - type: integer 
+	Parameter IN103_WIDTH bound to: 1 - type: integer 
+	Parameter IN104_WIDTH bound to: 1 - type: integer 
+	Parameter IN105_WIDTH bound to: 1 - type: integer 
+	Parameter IN106_WIDTH bound to: 1 - type: integer 
+	Parameter IN107_WIDTH bound to: 1 - type: integer 
+	Parameter IN108_WIDTH bound to: 1 - type: integer 
+	Parameter IN109_WIDTH bound to: 1 - type: integer 
+	Parameter IN110_WIDTH bound to: 1 - type: integer 
+	Parameter IN111_WIDTH bound to: 1 - type: integer 
+	Parameter IN112_WIDTH bound to: 1 - type: integer 
+	Parameter IN113_WIDTH bound to: 1 - type: integer 
+	Parameter IN114_WIDTH bound to: 1 - type: integer 
+	Parameter IN115_WIDTH bound to: 1 - type: integer 
+	Parameter IN116_WIDTH bound to: 1 - type: integer 
+	Parameter IN117_WIDTH bound to: 1 - type: integer 
+	Parameter IN118_WIDTH bound to: 1 - type: integer 
+	Parameter IN119_WIDTH bound to: 1 - type: integer 
+	Parameter IN120_WIDTH bound to: 1 - type: integer 
+	Parameter IN121_WIDTH bound to: 1 - type: integer 
+	Parameter IN122_WIDTH bound to: 1 - type: integer 
+	Parameter IN123_WIDTH bound to: 1 - type: integer 
+	Parameter IN124_WIDTH bound to: 1 - type: integer 
+	Parameter IN125_WIDTH bound to: 1 - type: integer 
+	Parameter IN126_WIDTH bound to: 1 - type: integer 
+	Parameter IN127_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 9 - type: integer 
+	Parameter NUM_PORTS bound to: 9 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (4#1) [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'system_Concat_Interrupts_0' (5#1) [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_Concat_Interrupts_0/synth/system_Concat_Interrupts_0.v:60]
+INFO: [Synth 8-638] synthesizing module 'User_imp_W1U8ES' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:576]
+INFO: [Synth 8-3491] module 'system_axi_timer_0_3' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_axi_timer_0_3_stub.vhdl:5' bound to instance 'axi_timer_0' of component 'system_axi_timer_0_3' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:1120]
+INFO: [Synth 8-638] synthesizing module 'system_axi_timer_0_3' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_axi_timer_0_3_stub.vhdl:37]
+INFO: [Synth 8-3491] module 'system_axi_timer_1_2' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_axi_timer_1_2_stub.vhdl:5' bound to instance 'axi_timer_1' of component 'system_axi_timer_1_2' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:1149]
+INFO: [Synth 8-638] synthesizing module 'system_axi_timer_1_2' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_axi_timer_1_2_stub.vhdl:37]
+INFO: [Synth 8-3491] module 'system_axi_timer_0_2' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_axi_timer_0_2_stub.vhdl:5' bound to instance 'axi_timer_2' of component 'system_axi_timer_0_2' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:1178]
+INFO: [Synth 8-638] synthesizing module 'system_axi_timer_0_2' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_axi_timer_0_2_stub.vhdl:37]
+INFO: [Synth 8-3491] module 'system_btns_gpio_0' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_btns_gpio_0_stub.vhdl:5' bound to instance 'btns_gpio' of component 'system_btns_gpio_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:1207]
+INFO: [Synth 8-638] synthesizing module 'system_btns_gpio_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_btns_gpio_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'system_fit_timer_0_0' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_fit_timer_0_0_stub.vhdl:5' bound to instance 'fit_timer_0' of component 'system_fit_timer_0_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:1231]
+INFO: [Synth 8-638] synthesizing module 'system_fit_timer_0_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_fit_timer_0_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'system_leds_gpio_0' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_leds_gpio_0_stub.vhdl:5' bound to instance 'leds_gpio' of component 'system_leds_gpio_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:1237]
+INFO: [Synth 8-638] synthesizing module 'system_leds_gpio_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_leds_gpio_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'system_rgbleds_gpio_0' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_rgbleds_gpio_0_stub.vhdl:5' bound to instance 'rgbleds_gpio' of component 'system_rgbleds_gpio_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:1260]
+INFO: [Synth 8-638] synthesizing module 'system_rgbleds_gpio_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_rgbleds_gpio_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'system_switches_gpio_0' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_switches_gpio_0_stub.vhdl:5' bound to instance 'switches_gpio' of component 'system_switches_gpio_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:1283]
+INFO: [Synth 8-638] synthesizing module 'system_switches_gpio_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_switches_gpio_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'system_user_intc_0' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_user_intc_0_stub.vhdl:5' bound to instance 'user_intc' of component 'system_user_intc_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:1307]
+INFO: [Synth 8-638] synthesizing module 'system_user_intc_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_user_intc_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'system_xlconcat_0_0' declared at 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_xlconcat_0_0/synth/system_xlconcat_0_0.v:60' bound to instance 'xlconcat_0' of component 'system_xlconcat_0_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:1331]
+INFO: [Synth 8-6157] synthesizing module 'system_xlconcat_0_0' [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_xlconcat_0_0/synth/system_xlconcat_0_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat__parameterized0' [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter IN32_WIDTH bound to: 1 - type: integer 
+	Parameter IN33_WIDTH bound to: 1 - type: integer 
+	Parameter IN34_WIDTH bound to: 1 - type: integer 
+	Parameter IN35_WIDTH bound to: 1 - type: integer 
+	Parameter IN36_WIDTH bound to: 1 - type: integer 
+	Parameter IN37_WIDTH bound to: 1 - type: integer 
+	Parameter IN38_WIDTH bound to: 1 - type: integer 
+	Parameter IN39_WIDTH bound to: 1 - type: integer 
+	Parameter IN40_WIDTH bound to: 1 - type: integer 
+	Parameter IN41_WIDTH bound to: 1 - type: integer 
+	Parameter IN42_WIDTH bound to: 1 - type: integer 
+	Parameter IN43_WIDTH bound to: 1 - type: integer 
+	Parameter IN44_WIDTH bound to: 1 - type: integer 
+	Parameter IN45_WIDTH bound to: 1 - type: integer 
+	Parameter IN46_WIDTH bound to: 1 - type: integer 
+	Parameter IN47_WIDTH bound to: 1 - type: integer 
+	Parameter IN48_WIDTH bound to: 1 - type: integer 
+	Parameter IN49_WIDTH bound to: 1 - type: integer 
+	Parameter IN50_WIDTH bound to: 1 - type: integer 
+	Parameter IN51_WIDTH bound to: 1 - type: integer 
+	Parameter IN52_WIDTH bound to: 1 - type: integer 
+	Parameter IN53_WIDTH bound to: 1 - type: integer 
+	Parameter IN54_WIDTH bound to: 1 - type: integer 
+	Parameter IN55_WIDTH bound to: 1 - type: integer 
+	Parameter IN56_WIDTH bound to: 1 - type: integer 
+	Parameter IN57_WIDTH bound to: 1 - type: integer 
+	Parameter IN58_WIDTH bound to: 1 - type: integer 
+	Parameter IN59_WIDTH bound to: 1 - type: integer 
+	Parameter IN60_WIDTH bound to: 1 - type: integer 
+	Parameter IN61_WIDTH bound to: 1 - type: integer 
+	Parameter IN62_WIDTH bound to: 1 - type: integer 
+	Parameter IN63_WIDTH bound to: 1 - type: integer 
+	Parameter IN64_WIDTH bound to: 1 - type: integer 
+	Parameter IN65_WIDTH bound to: 1 - type: integer 
+	Parameter IN66_WIDTH bound to: 1 - type: integer 
+	Parameter IN67_WIDTH bound to: 1 - type: integer 
+	Parameter IN68_WIDTH bound to: 1 - type: integer 
+	Parameter IN69_WIDTH bound to: 1 - type: integer 
+	Parameter IN70_WIDTH bound to: 1 - type: integer 
+	Parameter IN71_WIDTH bound to: 1 - type: integer 
+	Parameter IN72_WIDTH bound to: 1 - type: integer 
+	Parameter IN73_WIDTH bound to: 1 - type: integer 
+	Parameter IN74_WIDTH bound to: 1 - type: integer 
+	Parameter IN75_WIDTH bound to: 1 - type: integer 
+	Parameter IN76_WIDTH bound to: 1 - type: integer 
+	Parameter IN77_WIDTH bound to: 1 - type: integer 
+	Parameter IN78_WIDTH bound to: 1 - type: integer 
+	Parameter IN79_WIDTH bound to: 1 - type: integer 
+	Parameter IN80_WIDTH bound to: 1 - type: integer 
+	Parameter IN81_WIDTH bound to: 1 - type: integer 
+	Parameter IN82_WIDTH bound to: 1 - type: integer 
+	Parameter IN83_WIDTH bound to: 1 - type: integer 
+	Parameter IN84_WIDTH bound to: 1 - type: integer 
+	Parameter IN85_WIDTH bound to: 1 - type: integer 
+	Parameter IN86_WIDTH bound to: 1 - type: integer 
+	Parameter IN87_WIDTH bound to: 1 - type: integer 
+	Parameter IN88_WIDTH bound to: 1 - type: integer 
+	Parameter IN89_WIDTH bound to: 1 - type: integer 
+	Parameter IN90_WIDTH bound to: 1 - type: integer 
+	Parameter IN91_WIDTH bound to: 1 - type: integer 
+	Parameter IN92_WIDTH bound to: 1 - type: integer 
+	Parameter IN93_WIDTH bound to: 1 - type: integer 
+	Parameter IN94_WIDTH bound to: 1 - type: integer 
+	Parameter IN95_WIDTH bound to: 1 - type: integer 
+	Parameter IN96_WIDTH bound to: 1 - type: integer 
+	Parameter IN97_WIDTH bound to: 1 - type: integer 
+	Parameter IN98_WIDTH bound to: 1 - type: integer 
+	Parameter IN99_WIDTH bound to: 1 - type: integer 
+	Parameter IN100_WIDTH bound to: 1 - type: integer 
+	Parameter IN101_WIDTH bound to: 1 - type: integer 
+	Parameter IN102_WIDTH bound to: 1 - type: integer 
+	Parameter IN103_WIDTH bound to: 1 - type: integer 
+	Parameter IN104_WIDTH bound to: 1 - type: integer 
+	Parameter IN105_WIDTH bound to: 1 - type: integer 
+	Parameter IN106_WIDTH bound to: 1 - type: integer 
+	Parameter IN107_WIDTH bound to: 1 - type: integer 
+	Parameter IN108_WIDTH bound to: 1 - type: integer 
+	Parameter IN109_WIDTH bound to: 1 - type: integer 
+	Parameter IN110_WIDTH bound to: 1 - type: integer 
+	Parameter IN111_WIDTH bound to: 1 - type: integer 
+	Parameter IN112_WIDTH bound to: 1 - type: integer 
+	Parameter IN113_WIDTH bound to: 1 - type: integer 
+	Parameter IN114_WIDTH bound to: 1 - type: integer 
+	Parameter IN115_WIDTH bound to: 1 - type: integer 
+	Parameter IN116_WIDTH bound to: 1 - type: integer 
+	Parameter IN117_WIDTH bound to: 1 - type: integer 
+	Parameter IN118_WIDTH bound to: 1 - type: integer 
+	Parameter IN119_WIDTH bound to: 1 - type: integer 
+	Parameter IN120_WIDTH bound to: 1 - type: integer 
+	Parameter IN121_WIDTH bound to: 1 - type: integer 
+	Parameter IN122_WIDTH bound to: 1 - type: integer 
+	Parameter IN123_WIDTH bound to: 1 - type: integer 
+	Parameter IN124_WIDTH bound to: 1 - type: integer 
+	Parameter IN125_WIDTH bound to: 1 - type: integer 
+	Parameter IN126_WIDTH bound to: 1 - type: integer 
+	Parameter IN127_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 3 - type: integer 
+	Parameter NUM_PORTS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat__parameterized0' (5#1) [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'system_xlconcat_0_0' (6#1) [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_xlconcat_0_0/synth/system_xlconcat_0_0.v:60]
+INFO: [Synth 8-3491] module 'system_xlconstant_0_0' declared at 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_xlconstant_0_0/synth/system_xlconstant_0_0.v:57' bound to instance 'xlconstant_0' of component 'system_xlconstant_0_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:1338]
+INFO: [Synth 8-6157] synthesizing module 'system_xlconstant_0_0' [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_xlconstant_0_0/synth/system_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 1'b0 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (7#1) [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'system_xlconstant_0_0' (8#1) [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_xlconstant_0_0/synth/system_xlconstant_0_0.v:57]
+INFO: [Synth 8-256] done synthesizing module 'User_imp_W1U8ES' (9#1) [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:576]
+INFO: [Synth 8-638] synthesizing module 'Video_imp_DGB33C' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:1442]
+INFO: [Synth 8-3491] module 'system_axi_dynclk_0' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_axi_dynclk_0_stub.vhdl:5' bound to instance 'axi_dynclk' of component 'system_axi_dynclk_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:1874]
+INFO: [Synth 8-638] synthesizing module 'system_axi_dynclk_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_axi_dynclk_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'system_axi_vdma_0' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_axi_vdma_0_stub.vhdl:5' bound to instance 'axi_vdma' of component 'system_axi_vdma_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:1902]
+INFO: [Synth 8-638] synthesizing module 'system_axi_vdma_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_axi_vdma_0_stub.vhdl:52]
+INFO: [Synth 8-3491] module 'system_axis_subset_converter_0_0' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_axis_subset_converter_0_0_stub.vhdl:5' bound to instance 'axis_subset_converter_0' of component 'system_axis_subset_converter_0_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:1946]
+INFO: [Synth 8-638] synthesizing module 'system_axis_subset_converter_0_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_axis_subset_converter_0_0_stub.vhdl:25]
+INFO: [Synth 8-3491] module 'system_hdmi_out_hpd_video_0' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_hdmi_out_hpd_video_0_stub.vhdl:5' bound to instance 'hdmi_out_hpd_video' of component 'system_hdmi_out_hpd_video_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:1963]
+INFO: [Synth 8-638] synthesizing module 'system_hdmi_out_hpd_video_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_hdmi_out_hpd_video_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'system_rgb2dvi_1_0' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_rgb2dvi_1_0_stub.vhdl:5' bound to instance 'rgb2dvi_1' of component 'system_rgb2dvi_1_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:1987]
+INFO: [Synth 8-638] synthesizing module 'system_rgb2dvi_1_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_rgb2dvi_1_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'system_v_axi4s_vid_out_0_0' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_v_axi4s_vid_out_0_0_stub.vhdl:5' bound to instance 'v_axi4s_vid_out_0' of component 'system_v_axi4s_vid_out_0_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:2001]
+INFO: [Synth 8-638] synthesizing module 'system_v_axi4s_vid_out_0_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_v_axi4s_vid_out_0_0_stub.vhdl:43]
+INFO: [Synth 8-3491] module 'system_vtc_out_0' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_vtc_out_0_stub.vhdl:5' bound to instance 'vtc_out' of component 'system_vtc_out_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:2036]
+INFO: [Synth 8-638] synthesizing module 'system_vtc_out_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_vtc_out_0_stub.vhdl:44]
+INFO: [Synth 8-3491] module 'system_xlconstant_0_1' declared at 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_xlconstant_0_1/synth/system_xlconstant_0_1.v:57' bound to instance 'xlconstant_0' of component 'system_xlconstant_0_1' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:2072]
+INFO: [Synth 8-6157] synthesizing module 'system_xlconstant_0_1' [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_xlconstant_0_1/synth/system_xlconstant_0_1.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 1'b1 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' (9#1) [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'system_xlconstant_0_1' (10#1) [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_xlconstant_0_1/synth/system_xlconstant_0_1.v:57]
+INFO: [Synth 8-256] done synthesizing module 'Video_imp_DGB33C' (11#1) [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:1442]
+INFO: [Synth 8-638] synthesizing module 'system_axi_interconnect_0_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:9250]
+INFO: [Synth 8-638] synthesizing module 'i00_couplers_imp_JSNZCB' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:2148]
+INFO: [Synth 8-3491] module 'system_auto_pc_0' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'system_auto_pc_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:2334]
+INFO: [Synth 8-638] synthesizing module 'system_auto_pc_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_auto_pc_0_stub.vhdl:71]
+INFO: [Synth 8-256] done synthesizing module 'i00_couplers_imp_JSNZCB' (12#1) [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:2148]
+INFO: [Synth 8-638] synthesizing module 'i01_couplers_imp_1SP98AI' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:2485]
+INFO: [Synth 8-256] done synthesizing module 'i01_couplers_imp_1SP98AI' (13#1) [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:2485]
+INFO: [Synth 8-638] synthesizing module 'i02_couplers_imp_1HJJSUG' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:2670]
+INFO: [Synth 8-3491] module 'system_auto_pc_1' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_auto_pc_1_stub.vhdl:5' bound to instance 'auto_pc' of component 'system_auto_pc_1' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:2856]
+INFO: [Synth 8-638] synthesizing module 'system_auto_pc_1' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_auto_pc_1_stub.vhdl:71]
+INFO: [Synth 8-256] done synthesizing module 'i02_couplers_imp_1HJJSUG' (14#1) [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:2670]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_LCIC31' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:2969]
+INFO: [Synth 8-3491] module 'system_m00_regslice_0' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_m00_regslice_0_stub.vhdl:5' bound to instance 'm00_regslice' of component 'system_m00_regslice_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:3093]
+INFO: [Synth 8-638] synthesizing module 'system_m00_regslice_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_m00_regslice_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_LCIC31' (15#1) [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:2969]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_1QVELOC' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:3186]
+INFO: [Synth 8-3491] module 'system_m01_regslice_0' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_m01_regslice_0_stub.vhdl:5' bound to instance 'm01_regslice' of component 'system_m01_regslice_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:3310]
+INFO: [Synth 8-638] synthesizing module 'system_m01_regslice_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_m01_regslice_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_1QVELOC' (16#1) [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:3186]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_1KEU66M' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:3403]
+INFO: [Synth 8-3491] module 'system_m02_regslice_0' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_m02_regslice_0_stub.vhdl:5' bound to instance 'm02_regslice' of component 'system_m02_regslice_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:3527]
+INFO: [Synth 8-638] synthesizing module 'system_m02_regslice_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_m02_regslice_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_1KEU66M' (17#1) [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:3403]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_S32O2N' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:3620]
+INFO: [Synth 8-3491] module 'system_m03_regslice_0' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_m03_regslice_0_stub.vhdl:5' bound to instance 'm03_regslice' of component 'system_m03_regslice_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:3744]
+INFO: [Synth 8-638] synthesizing module 'system_m03_regslice_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_m03_regslice_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_S32O2N' (18#1) [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:3620]
+INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_16DTQNE' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:3837]
+INFO: [Synth 8-3491] module 'system_m04_regslice_0' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_m04_regslice_0_stub.vhdl:5' bound to instance 'm04_regslice' of component 'system_m04_regslice_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:3961]
+INFO: [Synth 8-638] synthesizing module 'system_m04_regslice_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_m04_regslice_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_16DTQNE' (19#1) [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:3837]
+INFO: [Synth 8-638] synthesizing module 'm05_couplers_imp_F60LVF' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:4056]
+INFO: [Synth 8-3491] module 'system_m05_regslice_0' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_m05_regslice_0_stub.vhdl:5' bound to instance 'm05_regslice' of component 'system_m05_regslice_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:4182]
+INFO: [Synth 8-638] synthesizing module 'system_m05_regslice_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_m05_regslice_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'm05_couplers_imp_F60LVF' (20#1) [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:4056]
+INFO: [Synth 8-638] synthesizing module 'm06_couplers_imp_8PG7RD' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:4275]
+INFO: [Synth 8-3491] module 'system_m06_regslice_0' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_m06_regslice_0_stub.vhdl:5' bound to instance 'm06_regslice' of component 'system_m06_regslice_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:4399]
+INFO: [Synth 8-638] synthesizing module 'system_m06_regslice_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_m06_regslice_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'm06_couplers_imp_8PG7RD' (21#1) [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:4275]
+INFO: [Synth 8-638] synthesizing module 'm07_couplers_imp_1D4E4EW' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:4491]
+INFO: [Synth 8-3491] module 'system_m07_regslice_0' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_m07_regslice_0_stub.vhdl:5' bound to instance 'm07_regslice' of component 'system_m07_regslice_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:4614]
+INFO: [Synth 8-638] synthesizing module 'system_m07_regslice_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_m07_regslice_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'm07_couplers_imp_1D4E4EW' (22#1) [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:4491]
+INFO: [Synth 8-638] synthesizing module 'm08_couplers_imp_HQ631E' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:4727]
+INFO: [Synth 8-3491] module 'system_auto_pc_2' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_auto_pc_2_stub.vhdl:5' bound to instance 'auto_pc' of component 'system_auto_pc_2' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:4978]
+INFO: [Synth 8-638] synthesizing module 'system_auto_pc_2' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_auto_pc_2_stub.vhdl:71]
+INFO: [Synth 8-3491] module 'system_m08_regslice_0' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_m08_regslice_0_stub.vhdl:5' bound to instance 'm08_regslice' of component 'system_m08_regslice_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:5041]
+INFO: [Synth 8-638] synthesizing module 'system_m08_regslice_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_m08_regslice_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'm08_couplers_imp_HQ631E' (23#1) [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:4727]
+INFO: [Synth 8-638] synthesizing module 'm09_couplers_imp_14DSE43' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:5172]
+INFO: [Synth 8-3491] module 'system_m09_regslice_0' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_m09_regslice_0_stub.vhdl:5' bound to instance 'm09_regslice' of component 'system_m09_regslice_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:5412]
+INFO: [Synth 8-638] synthesizing module 'system_m09_regslice_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_m09_regslice_0_stub.vhdl:91]
+INFO: [Synth 8-256] done synthesizing module 'm09_couplers_imp_14DSE43' (24#1) [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:5172]
+INFO: [Synth 8-638] synthesizing module 'm10_couplers_imp_1KF3GTQ' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:5598]
+INFO: [Synth 8-3491] module 'system_auto_pc_3' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_auto_pc_3_stub.vhdl:5' bound to instance 'auto_pc' of component 'system_auto_pc_3' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:5782]
+INFO: [Synth 8-638] synthesizing module 'system_auto_pc_3' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_auto_pc_3_stub.vhdl:71]
+INFO: [Synth 8-256] done synthesizing module 'm10_couplers_imp_1KF3GTQ' (25#1) [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:5598]
+INFO: [Synth 8-638] synthesizing module 'm11_couplers_imp_S3AK5B' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:5915]
+INFO: [Synth 8-3491] module 'system_auto_pc_4' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_auto_pc_4_stub.vhdl:5' bound to instance 'auto_pc' of component 'system_auto_pc_4' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:6099]
+INFO: [Synth 8-638] synthesizing module 'system_auto_pc_4' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_auto_pc_4_stub.vhdl:71]
+INFO: [Synth 8-256] done synthesizing module 'm11_couplers_imp_S3AK5B' (26#1) [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:5915]
+INFO: [Synth 8-638] synthesizing module 'm12_couplers_imp_LCRXQL' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:6232]
+INFO: [Synth 8-3491] module 'system_auto_pc_5' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_auto_pc_5_stub.vhdl:5' bound to instance 'auto_pc' of component 'system_auto_pc_5' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:6416]
+INFO: [Synth 8-638] synthesizing module 'system_auto_pc_5' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_auto_pc_5_stub.vhdl:71]
+INFO: [Synth 8-256] done synthesizing module 'm12_couplers_imp_LCRXQL' (27#1) [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:6232]
+INFO: [Synth 8-638] synthesizing module 'm13_couplers_imp_1QVMSRG' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:6549]
+INFO: [Synth 8-3491] module 'system_auto_pc_6' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_auto_pc_6_stub.vhdl:5' bound to instance 'auto_pc' of component 'system_auto_pc_6' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:6733]
+INFO: [Synth 8-638] synthesizing module 'system_auto_pc_6' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_auto_pc_6_stub.vhdl:71]
+INFO: [Synth 8-256] done synthesizing module 'm13_couplers_imp_1QVMSRG' (28#1) [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:6549]
+INFO: [Synth 8-638] synthesizing module 'm14_couplers_imp_8POUP5' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:6866]
+INFO: [Synth 8-3491] module 'system_auto_pc_7' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_auto_pc_7_stub.vhdl:5' bound to instance 'auto_pc' of component 'system_auto_pc_7' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:7050]
+INFO: [Synth 8-638] synthesizing module 'system_auto_pc_7' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_auto_pc_7_stub.vhdl:71]
+INFO: [Synth 8-256] done synthesizing module 'm14_couplers_imp_8POUP5' (29#1) [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:6866]
+INFO: [Synth 8-638] synthesizing module 'm15_couplers_imp_1D4LCS8' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:7183]
+INFO: [Synth 8-3491] module 'system_auto_pc_8' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_auto_pc_8_stub.vhdl:5' bound to instance 'auto_pc' of component 'system_auto_pc_8' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:7367]
+INFO: [Synth 8-638] synthesizing module 'system_auto_pc_8' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_auto_pc_8_stub.vhdl:71]
+INFO: [Synth 8-256] done synthesizing module 'm15_couplers_imp_1D4LCS8' (30#1) [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:7183]
+INFO: [Synth 8-638] synthesizing module 'm16_couplers_imp_16E2RRE' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:7478]
+INFO: [Synth 8-256] done synthesizing module 'm16_couplers_imp_16E2RRE' (31#1) [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:7478]
+INFO: [Synth 8-638] synthesizing module 'm17_couplers_imp_F688EZ' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:7579]
+INFO: [Synth 8-256] done synthesizing module 'm17_couplers_imp_F688EZ' (32#1) [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:7579]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_Y9JEWS' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:8309]
+INFO: [Synth 8-3491] module 'system_auto_pc_9' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_auto_pc_9_stub.vhdl:5' bound to instance 'auto_pc' of component 'system_auto_pc_9' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:8670]
+INFO: [Synth 8-638] synthesizing module 'system_auto_pc_9' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_auto_pc_9_stub.vhdl:90]
+INFO: [Synth 8-3491] module 'system_s00_regslice_100' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_s00_regslice_100_stub.vhdl:5' bound to instance 's00_regslice' of component 'system_s00_regslice_100' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:8752]
+INFO: [Synth 8-638] synthesizing module 'system_s00_regslice_100' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_s00_regslice_100_stub.vhdl:89]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_Y9JEWS' (33#1) [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:8309]
+INFO: [Synth 8-3491] module 'system_tier2_xbar_0_0' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_tier2_xbar_0_0_stub.vhdl:5' bound to instance 'tier2_xbar_0' of component 'system_tier2_xbar_0_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:12283]
+INFO: [Synth 8-638] synthesizing module 'system_tier2_xbar_0_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_tier2_xbar_0_0_stub.vhdl:51]
+INFO: [Synth 8-3491] module 'system_tier2_xbar_1_0' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_tier2_xbar_1_0_stub.vhdl:5' bound to instance 'tier2_xbar_1' of component 'system_tier2_xbar_1_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:12459]
+INFO: [Synth 8-638] synthesizing module 'system_tier2_xbar_1_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_tier2_xbar_1_0_stub.vhdl:89]
+INFO: [Synth 8-3491] module 'system_tier2_xbar_2_0' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_tier2_xbar_2_0_stub.vhdl:5' bound to instance 'tier2_xbar_2' of component 'system_tier2_xbar_2_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:12813]
+INFO: [Synth 8-638] synthesizing module 'system_tier2_xbar_2_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_tier2_xbar_2_0_stub.vhdl:51]
+INFO: [Synth 8-3491] module 'system_xbar_0' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'system_xbar_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:12873]
+INFO: [Synth 8-638] synthesizing module 'system_xbar_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_xbar_0_stub.vhdl:89]
+INFO: [Synth 8-256] done synthesizing module 'system_axi_interconnect_0_0' (34#1) [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:9250]
+INFO: [Synth 8-638] synthesizing module 'system_axi_mem_intercon_1_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:13076]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1AIV7DJ' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:8085]
+INFO: [Synth 8-3491] module 'system_auto_pc_10' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_auto_pc_10_stub.vhdl:5' bound to instance 'auto_pc' of component 'system_auto_pc_10' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:8184]
+INFO: [Synth 8-638] synthesizing module 'system_auto_pc_10' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_auto_pc_10_stub.vhdl:44]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1AIV7DJ' (35#1) [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:8085]
+INFO: [Synth 8-256] done synthesizing module 'system_axi_mem_intercon_1_0' (36#1) [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:13076]
+INFO: [Synth 8-3491] module 'system_axi_uartlite_0_0' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_axi_uartlite_0_0_stub.vhdl:5' bound to instance 'axi_uartlite_0' of component 'system_axi_uartlite_0_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:15278]
+INFO: [Synth 8-638] synthesizing module 'system_axi_uartlite_0_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_axi_uartlite_0_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'system_ps7_0_0' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_ps7_0_0_stub.vhdl:5' bound to instance 'ps7_0' of component 'system_ps7_0_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:15303]
+INFO: [Synth 8-638] synthesizing module 'system_ps7_0_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_ps7_0_0_stub.vhdl:129]
+INFO: [Synth 8-638] synthesizing module 'system_ps7_0_axi_periph_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:13269]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_11SE3QO' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:7722]
+INFO: [Synth 8-3491] module 'system_s00_regslice_101' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_s00_regslice_101_stub.vhdl:5' bound to instance 's00_regslice' of component 'system_s00_regslice_101' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:7962]
+INFO: [Synth 8-638] synthesizing module 'system_s00_regslice_101' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_s00_regslice_101_stub.vhdl:89]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_11SE3QO' (37#1) [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:7722]
+INFO: [Synth 8-256] done synthesizing module 'system_ps7_0_axi_periph_0' (38#1) [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:13269]
+INFO: [Synth 8-3491] module 'system_rst_ps7_0_fclk0_0' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_rst_ps7_0_fclk0_0_stub.vhdl:5' bound to instance 'rst_ps7_0_fclk0' of component 'system_rst_ps7_0_fclk0_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:15509]
+INFO: [Synth 8-638] synthesizing module 'system_rst_ps7_0_fclk0_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_rst_ps7_0_fclk0_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'system_rst_ps7_0_fclk1_0' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_rst_ps7_0_fclk1_0_stub.vhdl:5' bound to instance 'rst_ps7_0_fclk1' of component 'system_rst_ps7_0_fclk1_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:15522]
+INFO: [Synth 8-638] synthesizing module 'system_rst_ps7_0_fclk1_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_rst_ps7_0_fclk1_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'system_xadc_wiz_0_0' declared at 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_xadc_wiz_0_0_stub.vhdl:5' bound to instance 'xadc_wiz_0' of component 'system_xadc_wiz_0_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:15535]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/.Xil/Vivado-18336-LT155977/realtime/system_xadc_wiz_0_0_stub.vhdl:75]
+INFO: [Synth 8-3491] module 'system_xlconstant_0_2' declared at 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_xlconstant_0_2/synth/system_xlconstant_0_2.v:57' bound to instance 'xlconstant_0' of component 'system_xlconstant_0_2' [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:15602]
+INFO: [Synth 8-6157] synthesizing module 'system_xlconstant_0_2' [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_xlconstant_0_2/synth/system_xlconstant_0_2.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'system_xlconstant_0_2' (39#1) [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_xlconstant_0_2/synth/system_xlconstant_0_2.v:57]
+INFO: [Synth 8-256] done synthesizing module 'system' (40#1) [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd:13594]
+INFO: [Synth 8-256] done synthesizing module 'system_wrapper' (41#1) [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:76]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1356.809 ; gain = 230.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1377.723 ; gain = 250.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1377.723 ; gain = 250.918
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.220 . Memory (MB): peak = 1389.770 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_audio_codec_ctrl_0_0/system_audio_codec_ctrl_0_0/system_audio_codec_ctrl_0_0_in_context.xdc] for cell 'system_i/Audio/audio_codec_ctrl_0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_audio_codec_ctrl_0_0/system_audio_codec_ctrl_0_0/system_audio_codec_ctrl_0_0_in_context.xdc] for cell 'system_i/Audio/audio_codec_ctrl_0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_clk_wiz_10MHz_0/system_clk_wiz_10MHz_0/system_clk_wiz_10MHz_0_in_context.xdc] for cell 'system_i/Audio/clk_wiz_10MHz'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_clk_wiz_10MHz_0/system_clk_wiz_10MHz_0/system_clk_wiz_10MHz_0_in_context.xdc] for cell 'system_i/Audio/clk_wiz_10MHz'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_btns_gpio_0/system_btns_gpio_0/system_btns_gpio_0_in_context.xdc] for cell 'system_i/User/btns_gpio'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_btns_gpio_0/system_btns_gpio_0/system_btns_gpio_0_in_context.xdc] for cell 'system_i/User/btns_gpio'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_fit_timer_0_0/system_fit_timer_0_0/system_fit_timer_0_0_in_context.xdc] for cell 'system_i/User/fit_timer_0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_fit_timer_0_0/system_fit_timer_0_0/system_fit_timer_0_0_in_context.xdc] for cell 'system_i/User/fit_timer_0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_leds_gpio_0/system_leds_gpio_0/system_leds_gpio_0_in_context.xdc] for cell 'system_i/User/leds_gpio'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_leds_gpio_0/system_leds_gpio_0/system_leds_gpio_0_in_context.xdc] for cell 'system_i/User/leds_gpio'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rgbleds_gpio_0/system_rgbleds_gpio_0/system_rgbleds_gpio_0_in_context.xdc] for cell 'system_i/User/rgbleds_gpio'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rgbleds_gpio_0/system_rgbleds_gpio_0/system_rgbleds_gpio_0_in_context.xdc] for cell 'system_i/User/rgbleds_gpio'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_switches_gpio_0/system_switches_gpio_0/system_switches_gpio_0_in_context.xdc] for cell 'system_i/User/switches_gpio'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_switches_gpio_0/system_switches_gpio_0/system_switches_gpio_0_in_context.xdc] for cell 'system_i/User/switches_gpio'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_user_intc_0/system_user_intc_0/system_user_intc_0_in_context.xdc] for cell 'system_i/User/user_intc'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_user_intc_0/system_user_intc_0/system_user_intc_0_in_context.xdc] for cell 'system_i/User/user_intc'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_dynclk_0/system_axi_dynclk_0/system_axi_dynclk_0_in_context.xdc] for cell 'system_i/Video/axi_dynclk'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_dynclk_0/system_axi_dynclk_0/system_axi_dynclk_0_in_context.xdc] for cell 'system_i/Video/axi_dynclk'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0/system_axi_vdma_0_in_context.xdc] for cell 'system_i/Video/axi_vdma'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0/system_axi_vdma_0_in_context.xdc] for cell 'system_i/Video/axi_vdma'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axis_subset_converter_0_0/system_axis_subset_converter_0_0/system_axis_subset_converter_0_0_in_context.xdc] for cell 'system_i/Video/axis_subset_converter_0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axis_subset_converter_0_0/system_axis_subset_converter_0_0/system_axis_subset_converter_0_0_in_context.xdc] for cell 'system_i/Video/axis_subset_converter_0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_hdmi_out_hpd_video_0/system_hdmi_out_hpd_video_0/system_hdmi_out_hpd_video_0_in_context.xdc] for cell 'system_i/Video/hdmi_out_hpd_video'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_hdmi_out_hpd_video_0/system_hdmi_out_hpd_video_0/system_hdmi_out_hpd_video_0_in_context.xdc] for cell 'system_i/Video/hdmi_out_hpd_video'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rgb2dvi_1_0/system_rgb2dvi_1_0/system_rgb2dvi_1_0_in_context.xdc] for cell 'system_i/Video/rgb2dvi_1'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rgb2dvi_1_0/system_rgb2dvi_1_0/system_rgb2dvi_1_0_in_context.xdc] for cell 'system_i/Video/rgb2dvi_1'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0_in_context.xdc] for cell 'system_i/Video/v_axi4s_vid_out_0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0_in_context.xdc] for cell 'system_i/Video/v_axi4s_vid_out_0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_vtc_out_0/system_vtc_out_0/system_vtc_out_0_in_context.xdc] for cell 'system_i/Video/vtc_out'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_vtc_out_0/system_vtc_out_0/system_vtc_out_0_in_context.xdc] for cell 'system_i/Video/vtc_out'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc] for cell 'system_i/ps7_0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc] for cell 'system_i/ps7_0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rst_ps7_0_fclk0_0/system_rst_ps7_0_fclk0_0/system_rst_ps7_0_fclk0_0_in_context.xdc] for cell 'system_i/rst_ps7_0_fclk0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rst_ps7_0_fclk0_0/system_rst_ps7_0_fclk0_0/system_rst_ps7_0_fclk0_0_in_context.xdc] for cell 'system_i/rst_ps7_0_fclk0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rst_ps7_0_fclk1_0/system_rst_ps7_0_fclk1_0/system_rst_ps7_0_fclk1_0_in_context.xdc] for cell 'system_i/rst_ps7_0_fclk1'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rst_ps7_0_fclk1_0/system_rst_ps7_0_fclk1_0/system_rst_ps7_0_fclk1_0_in_context.xdc] for cell 'system_i/rst_ps7_0_fclk1'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0/system_xadc_wiz_0_0/system_xadc_wiz_0_0_in_context.xdc] for cell 'system_i/xadc_wiz_0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0/system_xadc_wiz_0_0/system_xadc_wiz_0_0_in_context.xdc] for cell 'system_i/xadc_wiz_0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_timer_0_3/system_axi_timer_0_3/system_axi_timer_0_3_in_context.xdc] for cell 'system_i/User/axi_timer_0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_timer_0_3/system_axi_timer_0_3/system_axi_timer_0_3_in_context.xdc] for cell 'system_i/User/axi_timer_0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_timer_1_2/system_axi_timer_1_2/system_axi_timer_0_3_in_context.xdc] for cell 'system_i/User/axi_timer_1'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_timer_1_2/system_axi_timer_1_2/system_axi_timer_0_3_in_context.xdc] for cell 'system_i/User/axi_timer_1'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_timer_0_2/system_axi_timer_0_2/system_axi_timer_0_3_in_context.xdc] for cell 'system_i/User/axi_timer_2'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_timer_0_2/system_axi_timer_0_2/system_axi_timer_0_3_in_context.xdc] for cell 'system_i/User/axi_timer_2'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0/system_axi_gpio_0_0_in_context.xdc] for cell 'system_i/Arduino/arduino_intr_en_pins_2_3'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0/system_axi_gpio_0_0_in_context.xdc] for cell 'system_i/Arduino/arduino_intr_en_pins_2_3'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_arduino_input_0/system_arduino_input_0/system_arduino_input_0_in_context.xdc] for cell 'system_i/Arduino/arduino_no_intr_pins'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_arduino_input_0/system_arduino_input_0/system_arduino_input_0_in_context.xdc] for cell 'system_i/Arduino/arduino_no_intr_pins'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_uartlite_0_0/system_axi_uartlite_0_0/system_axi_uartlite_0_0_in_context.xdc] for cell 'system_i/axi_uartlite_0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_axi_uartlite_0_0/system_axi_uartlite_0_0/system_axi_uartlite_0_0_in_context.xdc] for cell 'system_i/axi_uartlite_0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_xbar_0/system_xbar_0/system_xbar_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/xbar'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_xbar_0/system_xbar_0/system_xbar_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/xbar'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_tier2_xbar_0_0/system_tier2_xbar_0_0/system_tier2_xbar_0_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/tier2_xbar_0'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_tier2_xbar_0_0/system_tier2_xbar_0_0/system_tier2_xbar_0_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/tier2_xbar_0'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_tier2_xbar_1_0/system_tier2_xbar_1_0/system_tier2_xbar_1_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/tier2_xbar_1'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_tier2_xbar_1_0/system_tier2_xbar_1_0/system_tier2_xbar_1_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/tier2_xbar_1'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_tier2_xbar_2_0/system_tier2_xbar_2_0/system_tier2_xbar_2_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/tier2_xbar_2'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_tier2_xbar_2_0/system_tier2_xbar_2_0/system_tier2_xbar_2_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/tier2_xbar_2'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0/system_auto_pc_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/i00_couplers/auto_pc'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0/system_auto_pc_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/i00_couplers/auto_pc'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1/system_auto_pc_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/i02_couplers/auto_pc'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1/system_auto_pc_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/i02_couplers/auto_pc'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_s00_regslice_100/system_s00_regslice_100/system_s00_regslice_98_in_context.xdc] for cell 'system_i/axi_interconnect_0/s00_couplers/s00_regslice'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_s00_regslice_100/system_s00_regslice_100/system_s00_regslice_98_in_context.xdc] for cell 'system_i/axi_interconnect_0/s00_couplers/s00_regslice'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_9/system_auto_pc_9/system_auto_pc_9_in_context.xdc] for cell 'system_i/axi_interconnect_0/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_9/system_auto_pc_9/system_auto_pc_9_in_context.xdc] for cell 'system_i/axi_interconnect_0/s00_couplers/auto_pc'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m00_regslice_0/system_m00_regslice_0/system_m03_regslice_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/m00_couplers/m00_regslice'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m00_regslice_0/system_m00_regslice_0/system_m03_regslice_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/m00_couplers/m00_regslice'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m01_regslice_0/system_m01_regslice_0/system_m03_regslice_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/m01_couplers/m01_regslice'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m01_regslice_0/system_m01_regslice_0/system_m03_regslice_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/m01_couplers/m01_regslice'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m02_regslice_0/system_m02_regslice_0/system_m03_regslice_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/m02_couplers/m02_regslice'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m02_regslice_0/system_m02_regslice_0/system_m03_regslice_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/m02_couplers/m02_regslice'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m03_regslice_0/system_m03_regslice_0/system_m03_regslice_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/m03_couplers/m03_regslice'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m03_regslice_0/system_m03_regslice_0/system_m03_regslice_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/m03_couplers/m03_regslice'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m04_regslice_0/system_m04_regslice_0/system_m03_regslice_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/m04_couplers/m04_regslice'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m04_regslice_0/system_m04_regslice_0/system_m03_regslice_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/m04_couplers/m04_regslice'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m05_regslice_0/system_m05_regslice_0/system_m05_regslice_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/m05_couplers/m05_regslice'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m05_regslice_0/system_m05_regslice_0/system_m05_regslice_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/m05_couplers/m05_regslice'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m06_regslice_0/system_m06_regslice_0/system_m03_regslice_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/m06_couplers/m06_regslice'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m06_regslice_0/system_m06_regslice_0/system_m03_regslice_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/m06_couplers/m06_regslice'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m07_regslice_0/system_m07_regslice_0/system_m03_regslice_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/m07_couplers/m07_regslice'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m07_regslice_0/system_m07_regslice_0/system_m03_regslice_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/m07_couplers/m07_regslice'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m08_regslice_0/system_m08_regslice_0/system_m08_regslice_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/m08_couplers/m08_regslice'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m08_regslice_0/system_m08_regslice_0/system_m08_regslice_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/m08_couplers/m08_regslice'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_2/system_auto_pc_2/system_auto_pc_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/m08_couplers/auto_pc'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_2/system_auto_pc_2/system_auto_pc_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/m08_couplers/auto_pc'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m09_regslice_0/system_m09_regslice_0/system_m09_regslice_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/m09_couplers/m09_regslice'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_m09_regslice_0/system_m09_regslice_0/system_m09_regslice_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/m09_couplers/m09_regslice'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_3/system_auto_pc_3/system_auto_pc_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/m10_couplers/auto_pc'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_3/system_auto_pc_3/system_auto_pc_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/m10_couplers/auto_pc'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_4/system_auto_pc_4/system_auto_pc_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/m11_couplers/auto_pc'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_4/system_auto_pc_4/system_auto_pc_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/m11_couplers/auto_pc'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_5/system_auto_pc_5/system_auto_pc_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/m12_couplers/auto_pc'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_5/system_auto_pc_5/system_auto_pc_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/m12_couplers/auto_pc'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_6/system_auto_pc_6/system_auto_pc_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/m13_couplers/auto_pc'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_6/system_auto_pc_6/system_auto_pc_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/m13_couplers/auto_pc'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_7/system_auto_pc_7/system_auto_pc_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/m14_couplers/auto_pc'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_7/system_auto_pc_7/system_auto_pc_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/m14_couplers/auto_pc'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_8/system_auto_pc_8/system_auto_pc_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/m15_couplers/auto_pc'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_8/system_auto_pc_8/system_auto_pc_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/m15_couplers/auto_pc'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_10/system_auto_pc_10/system_auto_pc_10_in_context.xdc] for cell 'system_i/axi_mem_intercon_1/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_10/system_auto_pc_10/system_auto_pc_10_in_context.xdc] for cell 'system_i/axi_mem_intercon_1/s00_couplers/auto_pc'
+Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_s00_regslice_101/system_s00_regslice_101/system_s00_regslice_98_in_context.xdc] for cell 'system_i/ps7_0_axi_periph/s00_couplers/s00_regslice'
+Finished Parsing XDC File [c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_s00_regslice_101/system_s00_regslice_101/system_s00_regslice_98_in_context.xdc] for cell 'system_i/ps7_0_axi_periph/s00_couplers/s00_regslice'
+Parsing XDC File [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc]
+WARNING: [Vivado 12-584] No ports matched 'pmoda_rpi_gpio_tri_io[1]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'pmoda_rpi_gpio_tri_io[0]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'pmoda_rpi_gpio_tri_io[3]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'pmoda_rpi_gpio_tri_io[2]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'pmoda_rpi_gpio_tri_io[5]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'pmoda_rpi_gpio_tri_io[4]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'pmoda_rpi_gpio_tri_io[7]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'pmoda_rpi_gpio_tri_io[6]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'pmoda_rpi_gpio_tri_io[2]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'pmoda_rpi_gpio_tri_io[3]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'pmoda_rpi_gpio_tri_io[6]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'pmoda_rpi_gpio_tri_io[7]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'pmodb_gpio_tri_io[1]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'pmodb_gpio_tri_io[0]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'pmodb_gpio_tri_io[3]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'pmodb_gpio_tri_io[2]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'pmodb_gpio_tri_io[5]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'pmodb_gpio_tri_io[4]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'pmodb_gpio_tri_io[7]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'pmodb_gpio_tri_io[6]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'pmodb_gpio_tri_io[2]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'pmodb_gpio_tri_io[3]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'pmodb_gpio_tri_io[6]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'pmodb_gpio_tri_io[7]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'arduino_gpio_tri_io[14]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:128]
+WARNING: [Vivado 12-584] No ports matched 'arduino_gpio_tri_io[15]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:129]
+WARNING: [Vivado 12-584] No ports matched 'arduino_gpio_tri_io[16]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:130]
+WARNING: [Vivado 12-584] No ports matched 'arduino_gpio_tri_io[17]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:131]
+WARNING: [Vivado 12-584] No ports matched 'arduino_gpio_tri_io[18]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:132]
+WARNING: [Vivado 12-584] No ports matched 'arduino_gpio_tri_io[19]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:133]
+WARNING: [Vivado 12-584] No ports matched 'arduino_direct_iic_scl_io'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:139]
+WARNING: [Vivado 12-584] No ports matched 'arduino_direct_iic_sda_io'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:140]
+WARNING: [Vivado 12-584] No ports matched 'arduino_direct_iic_scl_io'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:141]
+WARNING: [Vivado 12-584] No ports matched 'arduino_direct_iic_sda_io'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:142]
+WARNING: [Vivado 12-584] No ports matched 'arduino_direct_spi_io1_io'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:145]
+WARNING: [Vivado 12-584] No ports matched 'arduino_direct_spi_io0_io'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:146]
+WARNING: [Vivado 12-584] No ports matched 'arduino_direct_spi_sck_io'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:147]
+WARNING: [Vivado 12-584] No ports matched 'arduino_direct_spi_ss_io'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:148]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_clk_p'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:165]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_clk_n'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:168]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_clk_p'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:169]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[0]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:170]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[0]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:171]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[1]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:172]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[1]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:173]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[2]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:174]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[2]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:175]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_hpd[0]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:176]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_ddc_scl_io'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:177]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_ddc_sda_io'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:178]
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[0]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:235]
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[1]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:236]
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[2]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:237]
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[3]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:238]
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[4]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:239]
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[5]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:240]
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[6]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:241]
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[7]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:242]
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[8]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:243]
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[9]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:244]
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[10]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:245]
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[11]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:246]
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[12]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:247]
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[13]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:248]
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[14]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:249]
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[15]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:250]
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[16]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:251]
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[17]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:252]
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[18]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:253]
+WARNING: [Vivado 12-584] No ports matched 'rpi_gpio_tri_io[19]'. [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc:254]
+Finished Parsing XDC File [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/system_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/constrs_1/imports/constraints/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1478.566 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 11 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 11 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1478.566 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1478.566 ; gain = 351.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1478.566 ; gain = 351.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_clk_n. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rgb2dvi_1_0/system_rgb2dvi_1_0/system_rgb2dvi_1_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_clk_n. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rgb2dvi_1_0/system_rgb2dvi_1_0/system_rgb2dvi_1_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_clk_p. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rgb2dvi_1_0/system_rgb2dvi_1_0/system_rgb2dvi_1_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_clk_p. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rgb2dvi_1_0/system_rgb2dvi_1_0/system_rgb2dvi_1_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_data_n[0]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rgb2dvi_1_0/system_rgb2dvi_1_0/system_rgb2dvi_1_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_data_n[0]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rgb2dvi_1_0/system_rgb2dvi_1_0/system_rgb2dvi_1_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_data_n[1]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rgb2dvi_1_0/system_rgb2dvi_1_0/system_rgb2dvi_1_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_data_n[1]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rgb2dvi_1_0/system_rgb2dvi_1_0/system_rgb2dvi_1_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_data_n[2]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rgb2dvi_1_0/system_rgb2dvi_1_0/system_rgb2dvi_1_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_data_n[2]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rgb2dvi_1_0/system_rgb2dvi_1_0/system_rgb2dvi_1_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_data_p[0]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rgb2dvi_1_0/system_rgb2dvi_1_0/system_rgb2dvi_1_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_data_p[0]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rgb2dvi_1_0/system_rgb2dvi_1_0/system_rgb2dvi_1_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_data_p[1]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rgb2dvi_1_0/system_rgb2dvi_1_0/system_rgb2dvi_1_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_data_p[1]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rgb2dvi_1_0/system_rgb2dvi_1_0/system_rgb2dvi_1_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_data_p[2]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rgb2dvi_1_0/system_rgb2dvi_1_0/system_rgb2dvi_1_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_data_p[2]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_rgb2dvi_1_0/system_rgb2dvi_1_0/system_rgb2dvi_1_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 25).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 26).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 27).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 28).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 29).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 30).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 31).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 32).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 33).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 34).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 35).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 36).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 37).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 38).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 39).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 40).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cke. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 41).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cke. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 42).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 43).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 44).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 45).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 46).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 47).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 48).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 49).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 50).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 51).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 52).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[2]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 53).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[2]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 54).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[3]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 55).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[3]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 56).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 57).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 58).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 59).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 60).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[2]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 61).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[2]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 62).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[3]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 63).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[3]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 64).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 65).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 66).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 67).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 68).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[2]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 69).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[2]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 70).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[3]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 71).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[3]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 72).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 73).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 74).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 75).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 76).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 77).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 78).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 79).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 80).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 81).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 82).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 83).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 84).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 85).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 86).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[16]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 87).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[16]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 88).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[17]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 89).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[17]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 90).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[18]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 91).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[18]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 92).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[19]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 93).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[19]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 94).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 95).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 96).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[20]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 97).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[20]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 98).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[21]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 99).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[21]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 100).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[22]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 101).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[22]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 102).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[23]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 103).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[23]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 104).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[24]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 105).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[24]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 106).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[25]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 107).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[25]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 108).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[26]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 109).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[26]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 110).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[27]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 111).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[27]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 112).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[28]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 113).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[28]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 114).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[29]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 115).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[29]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 116).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 117).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 118).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[30]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 119).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[30]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 120).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[31]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 121).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[31]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 122).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 123).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 124).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 125).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 126).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 127).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 128).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 129).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 130).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 131).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 132).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 133).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 134).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 135).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 136).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 137).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 138).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_odt. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 139).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_odt. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 140).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 141).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 142).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 143).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 144).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 145).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 146).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 147).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 148).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 149).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 150).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 151).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 152).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 153).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 154).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 155).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 156).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 157).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 158).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 159).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 160).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 161).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 162).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 163).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 164).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 165).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 166).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 167).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 168).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 169).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 170).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 171).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 172).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 173).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 174).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 175).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 176).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 177).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 178).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 179).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 180).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 181).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 182).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 183).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 184).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 185).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 186).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 187).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 188).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 189).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 190).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 191).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 192).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 193).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 194).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 195).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 196).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 197).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 198).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[32]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 199).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[32]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 200).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[33]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 201).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[33]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 202).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[34]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 203).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[34]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 204).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[35]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 205).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[35]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 206).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[36]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 207).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[36]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 208).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[37]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 209).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[37]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 210).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[38]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 211).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[38]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 212).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[39]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 213).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[39]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 214).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 215).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 216).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[40]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 217).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[40]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 218).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[41]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 219).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[41]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 220).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[42]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 221).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[42]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 222).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[43]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 223).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[43]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 224).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[44]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 225).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[44]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 226).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[45]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 227).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[45]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 228).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[46]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 229).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[46]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 230).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[47]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 231).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[47]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 232).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[48]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 233).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[48]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 234).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[49]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 235).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[49]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 236).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 237).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 238).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[50]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 239).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[50]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 240).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[51]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 241).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[51]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 242).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[52]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 243).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[52]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 244).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[53]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 245).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[53]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 246).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 247).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 248).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 249).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 250).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 251).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 252).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 253).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 254).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 255).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 256).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 257).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 258).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 259).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 260).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 261).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 262).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/Audio/audio_codec_ctrl_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/Audio/clk_wiz_10MHz. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/Concat_Interrupts. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/User/btns_gpio. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/User/fit_timer_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/User/leds_gpio. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/User/rgbleds_gpio. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/User/switches_gpio. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/User/user_intc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/User/xlconcat_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/User/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/Video/axi_dynclk. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/Video/axi_vdma. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/Video/axis_subset_converter_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/Video/hdmi_out_hpd_video. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/Video/rgb2dvi_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/Video/v_axi4s_vid_out_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/Video/vtc_out. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/Video/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/axi_interconnect_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/axi_mem_intercon_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/ps7_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/ps7_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/rst_ps7_0_fclk0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/rst_ps7_0_fclk1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/xadc_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/User/axi_timer_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/User/axi_timer_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/User/axi_timer_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/Arduino/arduino_intr_en_pins_2_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/Arduino/arduino_no_intr_pins. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/axi_uartlite_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/axi_interconnect_0/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/axi_interconnect_0/tier2_xbar_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/axi_interconnect_0/tier2_xbar_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/axi_interconnect_0/tier2_xbar_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/axi_interconnect_0/i00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/axi_interconnect_0/i02_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/axi_interconnect_0/s00_couplers/s00_regslice. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/axi_interconnect_0/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/axi_interconnect_0/m00_couplers/m00_regslice. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/axi_interconnect_0/m01_couplers/m01_regslice. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/axi_interconnect_0/m02_couplers/m02_regslice. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/axi_interconnect_0/m03_couplers/m03_regslice. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/axi_interconnect_0/m04_couplers/m04_regslice. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/axi_interconnect_0/m05_couplers/m05_regslice. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/axi_interconnect_0/m06_couplers/m06_regslice. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/axi_interconnect_0/m07_couplers/m07_regslice. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/axi_interconnect_0/m08_couplers/m08_regslice. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/axi_interconnect_0/m08_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/axi_interconnect_0/m09_couplers/m09_regslice. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/axi_interconnect_0/m10_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/axi_interconnect_0/m11_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/axi_interconnect_0/m12_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/axi_interconnect_0/m13_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/axi_interconnect_0/m14_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/axi_interconnect_0/m15_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/axi_mem_intercon_1/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/ps7_0_axi_periph/s00_couplers/s00_regslice. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1478.566 ; gain = 351.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1478.566 ; gain = 351.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1478.566 ; gain = 351.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1478.566 ; gain = 351.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1478.566 ; gain = 351.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1478.566 ; gain = 351.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1478.566 ; gain = 351.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1478.566 ; gain = 351.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1478.566 ; gain = 351.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1478.566 ; gain = 351.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1478.566 ; gain = 351.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1478.566 ; gain = 351.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------------+----------+
+|      |BlackBox name                    |Instances |
++------+---------------------------------+----------+
+|1     |system_tier2_xbar_0_0            |         1|
+|2     |system_tier2_xbar_1_0            |         1|
+|3     |system_tier2_xbar_2_0            |         1|
+|4     |system_xbar_0                    |         1|
+|5     |system_auto_pc_0                 |         1|
+|6     |system_auto_pc_1                 |         1|
+|7     |system_m00_regslice_0            |         1|
+|8     |system_m01_regslice_0            |         1|
+|9     |system_m02_regslice_0            |         1|
+|10    |system_m03_regslice_0            |         1|
+|11    |system_m04_regslice_0            |         1|
+|12    |system_m05_regslice_0            |         1|
+|13    |system_m06_regslice_0            |         1|
+|14    |system_m07_regslice_0            |         1|
+|15    |system_auto_pc_2                 |         1|
+|16    |system_m08_regslice_0            |         1|
+|17    |system_m09_regslice_0            |         1|
+|18    |system_auto_pc_3                 |         1|
+|19    |system_auto_pc_4                 |         1|
+|20    |system_auto_pc_5                 |         1|
+|21    |system_auto_pc_6                 |         1|
+|22    |system_auto_pc_7                 |         1|
+|23    |system_auto_pc_8                 |         1|
+|24    |system_auto_pc_9                 |         1|
+|25    |system_s00_regslice_100          |         1|
+|26    |system_auto_pc_10                |         1|
+|27    |system_s00_regslice_101          |         1|
+|28    |system_axi_uartlite_0_0          |         1|
+|29    |system_ps7_0_0                   |         1|
+|30    |system_rst_ps7_0_fclk0_0         |         1|
+|31    |system_rst_ps7_0_fclk1_0         |         1|
+|32    |system_xadc_wiz_0_0              |         1|
+|33    |system_axi_gpio_0_0              |         1|
+|34    |system_arduino_input_0           |         1|
+|35    |system_audio_codec_ctrl_0_0      |         1|
+|36    |system_clk_wiz_10MHz_0           |         1|
+|37    |system_axi_timer_0_3             |         1|
+|38    |system_axi_timer_1_2             |         1|
+|39    |system_axi_timer_0_2             |         1|
+|40    |system_btns_gpio_0               |         1|
+|41    |system_fit_timer_0_0             |         1|
+|42    |system_leds_gpio_0               |         1|
+|43    |system_rgbleds_gpio_0            |         1|
+|44    |system_switches_gpio_0           |         1|
+|45    |system_user_intc_0               |         1|
+|46    |system_axi_dynclk_0              |         1|
+|47    |system_axi_vdma_0                |         1|
+|48    |system_axis_subset_converter_0_0 |         1|
+|49    |system_hdmi_out_hpd_video_0      |         1|
+|50    |system_rgb2dvi_1_0               |         1|
+|51    |system_v_axi4s_vid_out_0_0       |         1|
+|52    |system_vtc_out_0                 |         1|
++------+---------------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------------------+------+
+|      |Cell                                  |Count |
++------+--------------------------------------+------+
+|1     |system_arduino_input_0_bbox           |     1|
+|2     |system_audio_codec_ctrl_0_0_bbox      |     1|
+|3     |system_auto_pc_0_bbox                 |     1|
+|4     |system_auto_pc_10_bbox                |     1|
+|5     |system_auto_pc_1_bbox                 |     1|
+|6     |system_auto_pc_2_bbox                 |     1|
+|7     |system_auto_pc_3_bbox                 |     1|
+|8     |system_auto_pc_4_bbox                 |     1|
+|9     |system_auto_pc_5_bbox                 |     1|
+|10    |system_auto_pc_6_bbox                 |     1|
+|11    |system_auto_pc_7_bbox                 |     1|
+|12    |system_auto_pc_8_bbox                 |     1|
+|13    |system_auto_pc_9_bbox                 |     1|
+|14    |system_axi_dynclk_0_bbox              |     1|
+|15    |system_axi_gpio_0_0_bbox              |     1|
+|16    |system_axi_timer_0_2_bbox             |     1|
+|17    |system_axi_timer_0_3_bbox             |     1|
+|18    |system_axi_timer_1_2_bbox             |     1|
+|19    |system_axi_uartlite_0_0_bbox          |     1|
+|20    |system_axi_vdma_0_bbox                |     1|
+|21    |system_axis_subset_converter_0_0_bbox |     1|
+|22    |system_btns_gpio_0_bbox               |     1|
+|23    |system_clk_wiz_10MHz_0_bbox           |     1|
+|24    |system_fit_timer_0_0_bbox             |     1|
+|25    |system_hdmi_out_hpd_video_0_bbox      |     1|
+|26    |system_leds_gpio_0_bbox               |     1|
+|27    |system_m00_regslice_0_bbox            |     1|
+|28    |system_m01_regslice_0_bbox            |     1|
+|29    |system_m02_regslice_0_bbox            |     1|
+|30    |system_m03_regslice_0_bbox            |     1|
+|31    |system_m04_regslice_0_bbox            |     1|
+|32    |system_m05_regslice_0_bbox            |     1|
+|33    |system_m06_regslice_0_bbox            |     1|
+|34    |system_m07_regslice_0_bbox            |     1|
+|35    |system_m08_regslice_0_bbox            |     1|
+|36    |system_m09_regslice_0_bbox            |     1|
+|37    |system_ps7_0_0_bbox                   |     1|
+|38    |system_rgb2dvi_1_0_bbox               |     1|
+|39    |system_rgbleds_gpio_0_bbox            |     1|
+|40    |system_rst_ps7_0_fclk0_0_bbox         |     1|
+|41    |system_rst_ps7_0_fclk1_0_bbox         |     1|
+|42    |system_s00_regslice_100_bbox          |     1|
+|43    |system_s00_regslice_101_bbox          |     1|
+|44    |system_switches_gpio_0_bbox           |     1|
+|45    |system_tier2_xbar_0_0_bbox            |     1|
+|46    |system_tier2_xbar_1_0_bbox            |     1|
+|47    |system_tier2_xbar_2_0_bbox            |     1|
+|48    |system_user_intc_0_bbox               |     1|
+|49    |system_v_axi4s_vid_out_0_0_bbox       |     1|
+|50    |system_vtc_out_0_bbox                 |     1|
+|51    |system_xadc_wiz_0_0_bbox              |     1|
+|52    |system_xbar_0_bbox                    |     1|
+|53    |IBUF                                  |    20|
+|54    |IOBUF                                 |    11|
+|55    |OBUF                                  |    21|
++------+--------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1478.566 ; gain = 351.762
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:26 . Memory (MB): peak = 1478.566 ; gain = 250.918
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1478.566 ; gain = 351.762
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.205 . Memory (MB): peak = 1478.566 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1478.566 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 11 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 11 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+227 Infos, 71 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 1478.566 ; gain = 351.762
+INFO: [Common 17-1381] The checkpoint 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/system_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_wrapper_utilization_synth.rpt -pb system_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 30 17:21:16 2023...

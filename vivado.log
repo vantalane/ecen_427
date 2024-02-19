@@ -1,0 +1,366 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Aug 30 17:12:11 2023
+# Process ID: 384
+# Current directory: C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18240 C:\S3_ES_Fall-23\ES1_PYNQ_Z2_Ref\ecen427_v0.4\ecen427.xpr
+# Log file: C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/vivado.log
+# Journal file: C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.xpr
+INFO: [Project 1-313] Project file moved from 'C:/sources/S3_ES_Fall-23/ES_PYNQ_Z2_Ref/ecen427_v0.4' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.ipdefs/digilent_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:39 ; elapsed = 00:00:33 . Memory (MB): peak = 1256.844 ; gain = 152.316
+update_compile_order -fileset sources_1
+open_bd_design {C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/system.bd}
+Reading block design file <C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/system.bd>...
+Adding component instance block -- xilinx.com:user:audio_codec_ctrl:1.0 - audio_codec_ctrl_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_10MHz
+Adding component instance block -- xilinx.com:ip:fit_timer:2.0 - fit_timer_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:axi_timer:2.0 - axi_timer_2
+Adding component instance block -- xilinx.com:ip:axi_timer:2.0 - axi_timer_0
+Adding component instance block -- xilinx.com:ip:axi_timer:2.0 - axi_timer_1
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - btns_gpio
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - leds_gpio
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - rgbleds_gpio
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - switches_gpio
+Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - user_intc
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- digilentinc.com:ip:axi_dynclk:1.0 - axi_dynclk
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- digilentinc.com:ip:rgb2dvi:1.3 - rgb2dvi_1
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - hdmi_out_hpd_video
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding component instance block -- xilinx.com:ip:v_tc:6.2 - vtc_out
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - ps7_0
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_fclk0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_fclk1
+Adding component instance block -- xilinx.com:ip:xadc_wiz:3.3 - xadc_wiz_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - arduino_no_intr_pins
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - arduino_intr_en_pins_2_3
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - Concat_Interrupts
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - tier2_xbar_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - tier2_xbar_1
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - tier2_xbar_2
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m02_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m03_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m04_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m05_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m06_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m07_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m08_regslice
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m09_regslice
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon_1
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Successfully read diagram <system> from block design file <C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 1494.668 ; gain = 197.199
+open_bd_design {C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/system.bd}
+report_ip_status -name ip_status 
+validate_bd_design -force
+delete_bd_objs: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1648.266 ; gain = 0.000
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /Audio/clk_wiz_10MHz clk_wiz propagate
+INFO: [xilinx.com:ip:axi_vdma:6.3-16] /Video/axi_vdma 
+                    All clocks connected to AXI VDMA are not identical, therefore configuring AXI-VDMA in ASYNC mode.
+WARNING: [BD 41-927] Following properties on pin /xadc_wiz_0/s_axi_aclk have been updated from connected ip, but BD cell '/xadc_wiz_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 1e+08 
+Please resolve any mismatches by directly setting properties on BD cell </xadc_wiz_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /Video/axi_dynclk/REF_CLK_I have been updated from connected ip, but BD cell '/Video/axi_dynclk' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 1e+08 
+Please resolve any mismatches by directly setting properties on BD cell </Video/axi_dynclk> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /Video/axi_dynclk/s00_axi_aclk have been updated from connected ip, but BD cell '/Video/axi_dynclk' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 1e+08 
+Please resolve any mismatches by directly setting properties on BD cell </Video/axi_dynclk> to completely resolve these warnings.
+validate_bd_design: Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 1732.133 ; gain = 83.867
+save_bd_design
+Wrote  : <C:\S3_ES_Fall-23\ES1_PYNQ_Z2_Ref\ecen427_v0.4\ecen427.srcs\sources_1\bd\system\system.bd> 
+Wrote  : <C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [BD 41-1662] The design 'system.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.vhd
+VHDL Output written to : C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/sim/system.vhd
+VHDL Output written to : C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/hdl/system_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/tier2_xbar_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/tier2_xbar_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/tier2_xbar_2 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/i00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/i02_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/s00_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_9/system_auto_pc_9_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m00_couplers/m00_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/m01_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m02_couplers/m02_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m03_couplers/m03_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m04_couplers/m04_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m05_couplers/m05_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m06_couplers/m06_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m07_couplers/m07_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m08_couplers/m08_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_2/system_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m08_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m09_couplers/m09_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_3/system_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m10_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_4/system_auto_pc_4_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m11_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_5/system_auto_pc_5_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m12_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_6/system_auto_pc_6_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m13_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_7/system_auto_pc_7_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m14_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_8/system_auto_pc_8_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m15_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/ip/system_auto_pc_10/system_auto_pc_10_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon_1/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/s00_regslice .
+Exporting to file C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/synth/system.hwdef
+WARNING: [BD 41-2265] Clock pin for protocol instance pin s_axi1 could not be determined. Make sure that ASSOCIATED_BUSIF and ASSOCIATED_RESET properties are set or propagated on clock pins of block /Audio
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_auto_pc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_auto_pc_10
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_auto_pc_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_auto_pc_3
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_auto_pc_4
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_auto_pc_5
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_auto_pc_6
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_auto_pc_7
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_auto_pc_8
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_auto_pc_9
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_m00_regslice_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_m01_regslice_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_m02_regslice_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_m03_regslice_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_m04_regslice_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_m05_regslice_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_m06_regslice_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_m07_regslice_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_m08_regslice_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_m09_regslice_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_s00_regslice_100
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_s00_regslice_101
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_tier2_xbar_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_tier2_xbar_1_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_tier2_xbar_2_0
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_pc_0, cache-ID = 349d051cd63a82f2; cache size = 28.101 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_pc_9, cache-ID = 1937012a4aaeb181; cache size = 28.101 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_m07_regslice_0, cache-ID = 296f615a82891793; cache size = 28.101 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_pc_1, cache-ID = 349d051cd63a82f2; cache size = 28.101 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_m00_regslice_0, cache-ID = 296f615a82891793; cache size = 28.101 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_tier2_xbar_1_0, cache-ID = afc276ea65c7f78c; cache size = 28.101 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_pc_10, cache-ID = 28a9ff85c6b491f8; cache size = 28.101 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_m04_regslice_0, cache-ID = 296f615a82891793; cache size = 28.101 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_pc_2, cache-ID = 349d051cd63a82f2; cache size = 28.101 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_m03_regslice_0, cache-ID = 296f615a82891793; cache size = 28.101 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_m08_regslice_0, cache-ID = 4a7247fbe8f10e18; cache size = 28.101 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_pc_3, cache-ID = 349d051cd63a82f2; cache size = 28.101 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_m01_regslice_0, cache-ID = 296f615a82891793; cache size = 28.101 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_m06_regslice_0, cache-ID = 296f615a82891793; cache size = 28.101 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_pc_4, cache-ID = 349d051cd63a82f2; cache size = 28.101 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_m05_regslice_0, cache-ID = dec65eb72abbae03; cache size = 28.101 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_pc_5, cache-ID = 349d051cd63a82f2; cache size = 28.101 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_m02_regslice_0, cache-ID = 296f615a82891793; cache size = 28.101 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_tier2_xbar_2_0, cache-ID = 5e77b684485457b1; cache size = 28.101 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_pc_6, cache-ID = 349d051cd63a82f2; cache size = 28.101 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_s00_regslice_101, cache-ID = ebad9262be3415bb; cache size = 28.101 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_pc_7, cache-ID = 349d051cd63a82f2; cache size = 28.101 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_m09_regslice_0, cache-ID = 30ba5b4eb565a8a0; cache size = 28.101 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_pc_8, cache-ID = 349d051cd63a82f2; cache size = 28.101 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_s00_regslice_100, cache-ID = ebad9262be3415bb; cache size = 28.101 MB.
+[Wed Aug 30 17:19:25 2023] Launched system_tier2_xbar_0_0_synth_1, synth_1...
+Run output will be captured here:
+system_tier2_xbar_0_0_synth_1: C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/system_tier2_xbar_0_0_synth_1/runme.log
+synth_1: C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/synth_1/runme.log
+[Wed Aug 30 17:19:25 2023] Launched impl_1...
+Run output will be captured here: C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 1970.441 ; gain = 203.250
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2170.133 ; gain = 6.938
+INFO: [Netlist 29-17] Analyzing 822 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'system_i/Audio/clk_wiz_10MHz/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2946.449 ; gain = 1.965
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2946.449 ; gain = 1.965
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2967.461 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 11 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+
+open_run: Time (s): cpu = 00:00:46 ; elapsed = 00:00:33 . Memory (MB): peak = 3123.184 ; gain = 1152.742
+open_report: Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 3198.035 ; gain = 67.988
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+archive_project C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ES1_PYNQ_Z2_Ref.xpr.zip -temp_dir C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/.Xil/Vivado-384-LT155977 -force -include_local_ip_cache
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/.Xil/Vivado-384-LT155977' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.ipdefs/digilent_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'synth_1_copy_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_ps7_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_audio_codec_ctrl_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_clk_wiz_10MHz_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_btns_gpio_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_fit_timer_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_leds_gpio_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_rgbleds_gpio_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_switches_gpio_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_user_intc_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_axi_dynclk_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_axi_vdma_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_axis_subset_converter_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_hdmi_out_hpd_video_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_rgb2dvi_1_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_v_axi4s_vid_out_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_vtc_out_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_rst_ps7_0_fclk0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_rst_ps7_0_fclk1_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_xadc_wiz_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_axi_timer_0_3_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_axi_timer_1_2_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_axi_timer_0_2_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_axi_gpio_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_arduino_input_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_axi_uartlite_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_xbar_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'system_tier2_xbar_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1_copy_1'
+INFO: [Coretcl 2-133] re-setting run 'system_ps7_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_audio_codec_ctrl_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_clk_wiz_10MHz_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_btns_gpio_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_fit_timer_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_leds_gpio_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_rgbleds_gpio_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_switches_gpio_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_user_intc_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_axi_dynclk_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_axi_vdma_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_axis_subset_converter_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_hdmi_out_hpd_video_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_rgb2dvi_1_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_v_axi4s_vid_out_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_vtc_out_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_rst_ps7_0_fclk0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_rst_ps7_0_fclk1_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_xadc_wiz_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_axi_timer_0_3_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_axi_timer_1_2_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_axi_timer_0_2_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_axi_gpio_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_arduino_input_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_axi_uartlite_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_xbar_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'system_tier2_xbar_0_0_impl_1'...
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_arduino_input_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_arduino_input_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_audio_codec_ctrl_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_audio_codec_ctrl_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_axi_dynclk_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_axi_dynclk_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_axi_gpio_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_axi_gpio_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_axi_timer_0_2'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_axi_timer_0_2'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_axi_timer_0_3'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_axi_timer_0_3'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_axi_timer_1_2'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_axi_timer_1_2'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_axi_uartlite_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_axi_uartlite_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_axi_vdma_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_axi_vdma_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_axis_subset_converter_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_axis_subset_converter_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_btns_gpio_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_btns_gpio_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_clk_wiz_10MHz_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_clk_wiz_10MHz_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_fit_timer_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_fit_timer_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_hdmi_out_hpd_video_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_hdmi_out_hpd_video_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_leds_gpio_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_leds_gpio_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_ps7_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_ps7_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_rgb2dvi_1_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_rgb2dvi_1_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_rgbleds_gpio_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_rgbleds_gpio_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_rst_ps7_0_fclk0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_rst_ps7_0_fclk0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_rst_ps7_0_fclk1_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_rst_ps7_0_fclk1_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_switches_gpio_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_switches_gpio_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_tier2_xbar_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_tier2_xbar_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_user_intc_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_user_intc_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_v_axi4s_vid_out_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_v_axi4s_vid_out_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_vtc_out_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_vtc_out_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_xadc_wiz_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_xadc_wiz_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'system_xbar_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'system_xbar_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'

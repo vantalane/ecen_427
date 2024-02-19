@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Aug 30 17:12:11 2023
+# Process ID: 384
+# Current directory: C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18240 C:\S3_ES_Fall-23\ES1_PYNQ_Z2_Ref\ecen427_v0.4\ecen427.xpr
+# Log file: C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/vivado.log
+# Journal file: C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/system.bd}
+open_bd_design {C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/ecen427.srcs/sources_1/bd/system/system.bd}
+report_ip_status -name ip_status 
+validate_bd_design -force
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_run impl_1
+archive_project C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ES1_PYNQ_Z2_Ref.xpr.zip -temp_dir C:/S3_ES_Fall-23/ES1_PYNQ_Z2_Ref/ecen427_v0.4/.Xil/Vivado-384-LT155977 -force -include_local_ip_cache
